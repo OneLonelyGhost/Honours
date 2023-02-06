@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/dedezvrg/public_html/
-    - /Honours/ -R De-Debugger $DEPLOYPATH
+    - /bin/cp -R De-Debugger $DEPLOYPATH
