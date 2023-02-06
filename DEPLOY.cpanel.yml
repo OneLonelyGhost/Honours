@@ -9,7 +9,6 @@ deployments:
       deploy_hook: |
         #!/bin/bash
         export DEPLOYPATH=/home/dedezvrg/public_html/
-        /bin/cp index.html $DEPLOYPATH
-        /bin/cp style.css $DEPLOYPATH
+        /bin -R De-Debugger $DEPLOYPATH
         echo "Custom Deployment Successful"
         echo "Link: http://dedebugger.site/public.html"
