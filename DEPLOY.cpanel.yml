@@ -1,14 +1,12 @@
 ---
-deployment:
-  tasks:
-    - export DEPLOYPATH=/home/dedezvrg/public_html/
-    - /De-Debugger index.html $DEPLOYPATH
-    - /De-Debugger help.html $DEPLOYPATH
-    - /De-Debugger tutorial.html $DEPLOYPATH
-    - /De-Debugger search.php $DEPLOYPATH
-    - export DEPLOYPATH1=/home/dedezvrg/public_html/css
-    - /De-Debugger -R css $DEPLOYPATH1
-    - export DEPLOYPATH2=/home/dedezvrg/public_html/img
-    - /De-Debugger -R img $DEPLOYPATH2
-    - export DEPLOYPATH3=/home/dedezvrg/public_html/js
-    - /De-Debugger -R js $DEPLOYPATH2
+version: 2
+
+deployments:
+  custom:
+    - repo: https://github.com/OneLonelyGhost/Honours.git
+      branch: master
+      deploy_to: /home/username/public_html
+      deploy_hook: |
+        #!/bin/bash
+        echo "Custom Deployment Successful"
+        echo "Link: http://dedebugger.site/public.html"
