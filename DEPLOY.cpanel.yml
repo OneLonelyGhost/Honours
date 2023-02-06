@@ -1,5 +1,5 @@
 ---
-version: 2
+version: 1
 
 deployments:
   custom:
@@ -8,5 +8,8 @@ deployments:
       deploy_to: /home/username/public_html
       deploy_hook: |
         #!/bin/bash
+        export DEPLOYPATH=/home/dedezvrg/public_html/
+        /bin/cp index.html $DEPLOYPATH
+        /bin/cp style.css $DEPLOYPATH
         echo "Custom Deployment Successful"
         echo "Link: http://dedebugger.site/public.html"
