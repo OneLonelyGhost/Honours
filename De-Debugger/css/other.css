@@ -57,18 +57,18 @@
     background:#C2ccd0;
     }
     html #tutorial{
-      margin: 0;
-      padding: 0;
+      margin: 0, 0;
+      padding: 0, 0;
       background:#576a78;
       }
       html #help{
-        margin: 0;
-        padding: 0;
+        margin: 0, 0;
+        padding: 0, 0;
         background:#78576a;
         }
         html #search{
-          margin: 0;
-          padding: 0;
+          margin: 0, 0;
+          padding: 0, 0;
           background:#6a7857;
           }
 
@@ -100,19 +100,15 @@
 }
 
 html #index 
-
   .text-on-image{
-  
     position: absolute;
     top: 70px;
     left: 10px;
     font-size:24px;
     font-weight:lighter;
-  }
   .flip-horizontally {
     transform: scaleX(-1);
   }
-
 html #tutorial .text-on-image{
   
   position: absolute;
