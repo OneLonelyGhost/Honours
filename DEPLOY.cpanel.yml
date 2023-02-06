@@ -4,7 +4,7 @@ version: 1
 deployments:
   custom:
     - repo: https://github.com/OneLonelyGhost/Honours.git
-      branch: master
+      branch: main
       deploy_to: /home/username/public_html
       deploy_hook: |
         #!/bin/bash
