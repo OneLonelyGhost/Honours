@@ -101,13 +101,11 @@
 
 html #index 
   .text-on-image{
-  
     position: absolute;
     top: 70px;
     left: 10px;
     font-size:24px;
     font-weight:lighter;
-}
   .flip-horizontally {
     transform: scaleX(-1);
   }
