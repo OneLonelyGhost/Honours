@@ -99,14 +99,20 @@
     position: relative;
 }
 
-html #index .text-on-image{
+html #index 
+
+  .text-on-image{
   
     position: absolute;
-    top: 700px;
+    top: 70px;
     left: 10px;
     font-size:24px;
-    font-weight:bold;
-}
+    font-weight:lighter;
+  }
+  .flip-horizontally {
+    transform: scaleX(-1);
+  }
+
 html #tutorial .text-on-image{
   
   position: absolute;
