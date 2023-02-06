@@ -2,4 +2,13 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/dedezvrg/public_html/
-    - /bin/cp -R De-Debugger $DEPLOYPATH
+    - /bin/De-Debugger index.html $DEPLOYPATH
+    - /bin/De-Debugger help.html $DEPLOYPATH
+    - /bin/De-Debugger tutorial.html $DEPLOYPATH
+    - /bin/De-Debugger search.php $DEPLOYPATH
+    - export DEPLOYPATH1=/home/dedezvrg/public_html/css
+    - /bin/De-Debugger -R css $DEPLOYPATH1
+    - export DEPLOYPATH2=/home/dedezvrg/public_html/img
+    - /bin/De-Debugger -R img $DEPLOYPATH2
+    - export DEPLOYPATH3=/home/dedezvrg/public_html/js
+    - /bin/De-Debugger -R js $DEPLOYPATH2
