@@ -97,27 +97,140 @@
 
   .relative-position {
     position: relative;
+  }   
+    .relative-position:hover {
+      background-color: #9AA6AE;
+    }
+
+
+.flip-horizontally {
+  transform: scaleX(-1);
 }
 
-html #index 
-  .text-on-image{
+.flip-vertically {
+  transform: scaleY(-1);
+}
+
+
+html #index .text-on-image{
     position: absolute;
     top: 70px;
     left: 10px;
     font-size:24px;
     font-weight:lighter;
   }
-  .flip-horizontally {
-    transform: scaleX(-1);
-  }
-html #tutorial .text-on-image{
   
+
+html #tutorial .text-on-image{
   position: absolute;
-  top: 70px;
-  left: 40px;
-  font-size:24px;
-  font-weight:bold;
+  top: 100px;
+  left: 25px;
+  font-size:36px;
+  font-weight:lighter;
+  text-align: center;
 }
 
+html #tutorial .container-fluid {
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+}
 
+html #tutorial a {
+  color: #0E1317;
+}
 
+.greyBox{
+  width: 800px;
+  height: 307px;
+
+  background: #9AA6AE;
+  border-width: 0px 7px 6px 0px;
+  border-style: solid;
+  border-color: #DDE1E4;
+  border-radius: 8px;
+}
+
+.greyBox p{
+  color: #0E1317;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+
+  
+  width: 660px;
+  height: 131px;
+  
+}
+
+.greyBox h2{
+  color: #0E1317;
+  
+  font-style: normal;
+  font-weight: 400;
+  font-size: 29px;
+  line-height: 34px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  
+  width: 329px;
+  height: 81px;
+  
+}
+
+.blueBox{
+  width: 800px;
+  height: 311px;
+
+  background: #4A5B67;
+  border-width: 0px 7px 6px 0px;
+  border-style: solid;
+  border-color: #000000;
+  border-radius: 8px;
+  
+}
+
+.blueBox p{
+  
+  width: 660px;
+  height: 247px;
+  
+
+  
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+
+  color: #E6E6E6;
+}
+
+.blueBox h2{
+  
+  width: 329px;
+  height: 81px;
+  
+
+  
+  font-style: normal;
+  font-weight: 400;
+  font-size: 29px;
+  line-height: 34px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #E6E6E6;
+}
+
+.tutImg img{
+  height:100%;
+  width: 566px;
+}
