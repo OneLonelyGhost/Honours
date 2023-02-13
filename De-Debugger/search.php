@@ -142,7 +142,7 @@
             <script src="js/bootstrap.bundle.min.js"></script>
         </main>
 
-        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top text-bg-dark">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-0 border-top text-bg-dark">
           <div class="col mb-3">
             <a href = "index.html" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
               <img class="bi me-2" width="100%" height="100%" role="img" aria-label="Logo" src="img/Logo.png"></img>

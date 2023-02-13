@@ -51,24 +51,20 @@
     -webkit-overflow-scrolling: touch;
   }
 
-  html #index{
-    margin: 0, 0;
-    padding: 0, 0;
+  body {
+    overflow-x: hidden;
+  }  
+
+  body#index{
     background:#C2ccd0;
     }
-    html #tutorial{
-      margin: 0, 0;
-      padding: 0, 0;
+    body#tutorial{
       background:#576a78;
       }
-      html #help{
-        margin: 0, 0;
-        padding: 0, 0;
+      body#help{
         background:#78576a;
         }
-        html #search{
-          margin: 0, 0;
-          padding: 0, 0;
+        body#search{
           background:#6a7857;
           }
 
@@ -98,7 +94,7 @@
   .relative-position {
     position: relative;
   }   
-    .relative-position:hover {
+  body#tutorial .relative-position:hover {
       background-color: #9AA6AE;
     }
 
@@ -112,30 +108,53 @@
 }
 
 
-html #index .text-on-image{
+body#index .text-on-image{
     position: absolute;
-    top: 70px;
-    left: 10px;
     font-size:24px;
     font-weight:lighter;
   }
   
 
-html #tutorial .text-on-image{
+.text-on-image{
   position: absolute;
-  top: 100px;
-  left: 25px;
-  font-size:36px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-weight:lighter;
   text-align: center;
 }
 
-html #tutorial .container-fluid {
+@media (max-width: 2560px) {
+  .text-on-image {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 1700px) {
+  .text-on-image {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 1234px) {
+  .text-on-image {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .text-on-image {
+    font-size: 24px;
+  }
+}
+
+
+body#tutorial .container-fluid {
   padding-left: 1.5%;
   padding-right: 1.5%;
 }
 
-html #tutorial a {
+body#tutorial a {
   color: #0E1317;
 }
 
