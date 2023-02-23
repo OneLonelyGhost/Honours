@@ -79,7 +79,8 @@
                 <div class="col-lg-1 col-sm-1"></div>
                 <div class="col-lg-4 col-sm-6 rounded greyBox">
                     <h2>Program Structure</h2>
-                    
+                    <p><span class="bg-dark text-white  font-monospace">#include</span> statements at the beginning of the program, which allow access to the functionalities of the included libraries. <span class="bg-dark text-white  font-monospace">main()</span> function, which is run when the program is executed. <span class="bg-dark text-white  font-monospace">return 0</span> at the end of the <span class="bg-dark text-white  font-monospace">main()</span> function, which indicates that the program should output 0 if it ran without issues</p>
+
                 </div>
                 <div class="col-lg-1 col-sm-1"></div>
                 <div class="col-lg-4 col-sm-6 "><img src="img/progStructure.png" class="img-fluid rounded-1 shadow-lg" alt="Responsive image"></div>
@@ -92,7 +93,13 @@
                 <div class="col-lg-1 col-sm-1"></div>
                 <div class="col-lg-4 col-sm-6 rounded blueBox">
                     <h2>Comments</h2>
+                    <p>Comments do not affect the performance of a program because they are ignored by the compiler.</p>
                     
+                    <p><u><strong>In C++, there are two types of comments:</strong></u></p>
+                    <ul>
+                    <li>Single-line: begin with <span class="bg-dark text-white  font-monospace">//</span>.</li>
+                    <li>Multi-line: begin with <span class="bg-dark text-white  font-monospace">/*</span> and end with <span class="bg-dark text-white  font-monospace">*/</span>.</li>
+                    </ul>
                 </div>
                 <div class="col-lg-1 col-sm-1"></div>    
             </div>
@@ -102,7 +109,14 @@
                     <div class="col-lg-1 col-sm-1"></div>
                     <div class="col-lg-4 col-sm-6 rounded greyBox">
                         <h2>Input and Output</h2>
-                        
+                        <p>
+                          Input and output make C++ programs more interactive.</p>
+                          <p>
+                            Including the iostream library is necessary and must be placed at the beginning of the program to access input and output.</p>
+                            <span class="bg-dark text-white  font-monospace">std::cout</span> is the “character output” and it is used together with <span class="bg-dark text-white  font-monospace">&lt;&lt;</span> to print to the terminal.
+                            <span class="bg-dark text-white  font-monospace">std::cin</span> is the “character input” and it is used together with <span class="bg-dark text-white  font-monospace">&gt;&gt;</span> to read user input.
+                            <span class="bg-dark text-white  font-monospace">std::endl</span> or <span class="bg-dark text-white  font-monospace">\n</span> can be used to insert a new line.
+                          </p>
                     </div>
                     <div class="col-lg-1 col-sm-1"></div>
                     <div class="col-lg-4 col-sm-6  "><img src="img/inOut.png" class="img-fluid rounded-1 shadow-lg" alt="Responsive image"></div>
@@ -115,7 +129,12 @@
                     <div class="col-lg-1 col-sm-1"></div>
                     <div class="col-lg-4 col-sm-6 rounded blueBox ">
                         <h2>Variables</h2>
-                        
+                        <p>
+                          Used to store and retrieve data. When declaring a variable, it must be given a data type and a name. Variables of the same type can be declared in a single statement using a comma-separated list. 
+                        </p>
+                        <p>
+                          Variables can be declared with the "<span class="bg-dark text-white font-monospace">  const  </span>"  keyword, which prevents their value from being changed later.
+                        </p>
                     </div>
                     <div class="col-lg-1 col-sm-1"></div>    
                 </div>
@@ -124,8 +143,18 @@
                     <div class="col-lg-1 col-sm-1"></div>
                     <div class="col-lg-4 col-sm-6 rounded greyBox">
                         <h2>References and Pointers</h2>
-                        
-                          </div>
+                        <p>
+                          C++ provides two powerful features for memory manipulation:
+
+                          
+
+                          <ul>
+                            <li><span class="bg-dark text-white  font-monospace">&</span> References: aliases to existing variables</li>
+                            <li><span class="bg-dark text-white  font-monospace">*</span> Pointers: store memory address as its value</li>
+                          </ul>
+                          Reference variables are created using the <span class="bg-dark text-white  font-monospace">&</span> symbol. <span class="bg-dark text-white  font-monospace">&</span> is also used to access the memory address of a variable.
+                        </p>
+                      </div>
                     <div class="col-lg-1 col-sm-1"></div>
                     <div class="col-lg-4 col-sm-6 "><img src="img/refPoint.png" class="img-fluid rounded-1 shadow-lg" alt="Responsive image"></div>
                     <div class="col-lg-1 col-sm-1"></div>    
@@ -137,7 +166,17 @@
                     <div class="col-lg-1 col-sm-1"></div>
                     <div class="col-lg-4 col-sm-6 rounded blueBox">
                         <h2>Arithmetic Operators</h2>
-                        
+                      <p>
+                        C++ supports different types of arithmetic operators that can perform common mathematical operations:
+
+                        <ul>
+                          <li><span class="bg-dark text-white  font-monospace">+</span> addition</li>
+                          <li><span class="bg-dark text-white  font-monospace">-</span> subtraction</li>
+                          <li><span class="bg-dark text-white  font-monospace">*</span> multiplication</li>
+                          <li><span class="bg-dark text-white  font-monospace">/</span> division</li>
+                          <li><span class="bg-dark text-white  font-monospace">%</span> modulo (yields the remainder)</li>
+                        </ul>
+                      </p>
 
                     </div>
                     <div class="col-lg-1 col-sm-1"></div>    

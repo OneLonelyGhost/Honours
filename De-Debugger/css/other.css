@@ -180,8 +180,7 @@ display: flex;
 align-items: center;
 
 
-width: 660px;
-height: 131px;
+
 
 }
 
@@ -197,8 +196,7 @@ align-items: center;
 text-align: center;
 
 
-width: 329px;
-height: 81px;
+
 
 }
 
@@ -216,11 +214,6 @@ border-radius: 8px;
 
 .blueBox p{
 
-width: 660px;
-height: 247px;
-
-
-
 font-style: normal;
 font-weight: 400;
 font-size: 16px;
@@ -230,11 +223,17 @@ align-items: center;
 
 color: #E6E6E6;
 }
+.blueBox ul{
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  
+  color: #E6E6E6;
+  }
 
 .blueBox h2{
 
-width: 329px;
-height: 81px;
 
 
 
