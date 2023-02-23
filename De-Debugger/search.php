@@ -91,10 +91,10 @@
                 $searchTerm = $_GET['term'];
 
                 // Connect to the database
-                $conn = mysqli_connect('host', 'username', 'password', 'database_name');
+                $conn = mysqli_connect('localhost', 'dedezvrd_admin', 'Redadmin', 'dedezvrg_dedeBugger');
 
                 // Execute the SQL query
-                $result = mysqli_query($conn, "SELECT * FROM items WHERE name LIKE '%$searchTerm%' OR description LIKE '%$searchTerm%'");
+                $result = mysqli_query($conn, "SELECT * FROM Search WHERE name LIKE '%$searchTerm%' OR description LIKE '%$searchTerm%'");
 
                 // Fetch the result as an associative array
                 $data = mysqli_fetch_all($result, MYSQLI_ASSOC);
