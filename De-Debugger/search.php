@@ -140,14 +140,14 @@
                 
                 <?php
                   // Check if any search results were found
-                  json_encode($data);
+                  
                   if (count($data) > 0) {
                     // Loop through each search result
                     foreach ($data as $result) {
                       // Get the title, link, and description from the search result
-                      $title = $result['title'];
-                      $link = $result['link'];
-                      $description = $result['description'];
+                      $title = $result['Title'];
+                      $link = $result['Link'];
+                      $description = $result['Description'];
 
                       // Output the search result using HTML and CSS
                       echo '<div class=" row search-result">';
