@@ -19,7 +19,6 @@
     <link href="css/headers.css" rel="stylesheet">
     <link href="css/carousel.css" rel="stylesheet">
     <link href="css/other.css" rel="stylesheet">
-    <link href="css/diagBox.css" rel="stylesheet">
 
 
     </head>
@@ -120,8 +119,8 @@
                     // Output the result as JSON
                     echo '<div class="row">
                     <div class="col-lg-3"></div>
-                    <div class="col-lg-6" id="results">'; echo json_encode($data);
-                    echo '</div>
+                    <div class="col-lg-6" id="results"><p id="results">'; echo json_encode($data);
+                    echo '</p></div>
                     <div class="col-lg-3"></div>
                     </div>';
                   }
@@ -133,7 +132,7 @@
                     echo "Error executing SQL query.";
                     echo '<div class="row">
                     <div class="col-lg-3"></div>
-                    <div class="col-lg-6" id="results">Error executing SQL query.';
+                    <div class="col-lg-6" id="results"><p id="results">Error executing SQL query.</p>';
                     echo '</div>
                     <div class="col-lg-3"></div>
                     </div>';
@@ -145,7 +144,7 @@
                   echo "Error executing SQL query.";
                     echo '<div class="row">
                     <div class="col-lg-3"></div>
-                    <div class="col-lg-6" id="results">Search term not defined.';
+                    <div class="col-lg-6" id="results"><p id="results">Search term not defined.</p>';
                     echo '</div>
                     <div class="col-lg-3"></div>
                     </div>';
@@ -164,7 +163,7 @@
               <div class="row">
                   <div class="col-lg-3"></div>
                   <div class="col-lg-6">
-                    <div id="previous-search"></div>
+                    <p id="previous-search"></p>
                   </div>
                   <div class="col-lg-3"></div>
               </div>
