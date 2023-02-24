@@ -158,7 +158,7 @@
               <hr>
               <div class="row">
                   <div class="col-lg-3"></div>
-                  <div class="col-lg-6"><h2 class="fw-normal text-light">Previous Searches</h2></div>
+                  <div class="col-lg-6"><h2 class="fw-normal text-light">Last Search</h2></div>
                   <div class="col-lg-3"></div>
               </div>
               <div class="row">
@@ -169,6 +169,7 @@
                   <div class="col-lg-3"></div>
               </div>
             </div>
+            <hr>
             
 
             
@@ -232,7 +233,7 @@
             const previousSearchTerm = localStorage.getItem('previousSearch');
 
             if (previousSearchTerm) {
-              previousSearchDiv.innerHTML = `Previous search: ${previousSearchTerm}`;
+              previousSearchDiv.innerHTML = `${previousSearchTerm}`;
             }
           
             form.addEventListener('submit', (event) => {
