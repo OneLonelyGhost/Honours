@@ -251,5 +251,19 @@ color: #E6E6E6;
 .tutImg img{
 height:100%;
 width: 566px;
+}
 
+#results{
+  font-weight:lighter;
   text-align: left;
+  color: #DDE1E4;
+  font-variant: small-caps;
+}
+
+#previous-search{
+  font-weight:lighter;
+  text-align: left;
+  color: #DDE1E4;
+  font-variant: small-caps;
+  font-style: bold;
+}
