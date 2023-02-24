@@ -81,7 +81,7 @@
                   <h2 class="fw-normal text-light">Enter your error code or phrase here!</h2>
                   <br>
                   <form class="form-inline my-2 my-lg-0">
-                  <input class="form-control mr-sm-2" id="searchTerm" type="text" placeholder="Search" aria-label="Search" name="q">
+                  <input class="form-control mr-sm-2" id="searchTerm" type="text" placeholder="Search" aria-label="Search" name="term">
                   <button class="btn btn-success my-2 my-sm-0" type="submit" onclick="searchData()">Search</button>
                 </form></div>
                 <div class="col-lg-2"></div>
@@ -96,7 +96,7 @@
                   $conn = mysqli_connect('localhost', 'dedezvrg_admin', '7Nwiq?;xZ=JJ', 'dedezvrg_dedeBugger');
                 
                   // Execute the SQL query
-                  $result = mysqli_query($conn, "SELECT * FROM items WHERE name LIKE '%$searchTerm%' OR description LIKE '%$searchTerm%'");
+                  $result = mysqli_query($conn, "SELECT * FROM Search WHERE Title LIKE '%$searchTerm%' OR Description LIKE '%$searchTerm%'");
                 
                   // Check if the query was successful
                   if($result !== false) {
