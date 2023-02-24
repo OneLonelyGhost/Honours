@@ -88,25 +88,45 @@
               </div>
               <?php
 
-                $searchTerm = $_GET['term'];
-
-                // Connect to the database
-                $conn = mysqli_connect('localhost', 'dedezvrg_admin', '7Nwiq?;xZ=JJ', 'dedezvrg_dedeBugger');
-
-                // Execute the SQL query
-                $result = mysqli_query($conn, "SELECT * FROM items WHERE name LIKE '%$searchTerm%' OR description LIKE '%$searchTerm%'");
-
-                // Fetch the result as an associative array
-                $data = mysqli_fetch_all($result, MYSQLI_ASSOC);
-
-                // Return the result as JSON
-                header('Content-Type: application/json');
-                echo json_encode($data);
-
-                // Close the database connection
-                mysqli_close($conn);
-
+                // Check if the search term is defined
+                if(isset($_GET['term'])) {
+                  $searchTerm = $_GET['term'];
+                
+                  // Connect to the database
+                  $conn = mysqli_connect('localhost', 'dedezvrg_admin', '7Nwiq?;xZ=JJ', 'dedezvrg_dedeBugger');
+                
+                  // Execute the SQL query
+                  $result = mysqli_query($conn, "SELECT * FROM items WHERE name LIKE '%$searchTerm%' OR description LIKE '%$searchTerm%'");
+                
+                  // Check if the query was successful
+                  if($result !== false) {
+                    // Fetch the result as an associative array
+                    $data = mysqli_fetch_all($result, MYSQLI_ASSOC);
+                  
+                    // Close the database connection
+                    mysqli_close($conn);
+                  
+                    // Set the content type header
+                    header('Content-Type: application/json');
+                  
+                    // Output the result as JSON
+                    echo json_encode($data);
+                  }
+                  else {
+                    // Close the database connection
+                    mysqli_close($conn);
+                  
+                    // Output an error message
+                    echo "Error executing SQL query.";
+                  }
+                }
+                else {
+                  // Output an error message
+                  echo "Search term not defined.";
+                }
+              
               ?>
+
 
               <hr>
               <div class="row">
