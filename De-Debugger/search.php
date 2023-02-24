@@ -87,70 +87,85 @@
               </div>
 
               <hr>
-              <div class="row">
-                <div class="col-lg-3"></div>
-                <div class="col-lg-6"><h2 class="fw-normal text-light">Search Results</h2></div>
-                <div class="col-lg-3"></div>
-              </div>
+              
 
               <?php
 
                 // Check if the search term is defined
                 if(isset($_GET['term'])) {
+                  
                   $searchTerm = $_GET['term'];
                 
                   // Connect to the database
                   $conn = mysqli_connect('localhost', 'dedezvrg_admin', '7Nwiq?;xZ=JJ', 'dedezvrg_dedeBugger');
                 
                   // Execute the SQL query
-                  $result = mysqli_query($conn, "SELECT * FROM Search WHERE Title LIKE '%$searchTerm%' OR Description LIKE '%$searchTerm%'");
+                  $query = mysqli_query($conn, "SELECT * FROM Search WHERE Title LIKE '%$searchTerm%' OR Description LIKE '%$searchTerm%'");
                 
                   // Check if the query was successful
-                  if($result !== false) {
-                    // Fetch the result as an associative array
-                    $data = mysqli_fetch_all($result, MYSQLI_ASSOC);
+                  if($query !== false) {
+                    // Fetch the query as an associative array
+                    $data = mysqli_fetch_all($query, MYSQLI_ASSOC);
                   
                     // Close the database connection
                     mysqli_close($conn);
                   
                     // Set the content type header
                     header('Content-Type: application/json');
-                  
-                    // Output the result as JSON
-                    echo '<div class="row">
-                    <div class="col-lg-3"></div>
-                    <div class="col-lg-6" id="results"><p id="results">'; echo json_encode($data);
-                    echo '</p></div>
-                    <div class="col-lg-3"></div>
-                    </div>';
+                    
                   }
                   else {
                     // Close the database connection
                     mysqli_close($conn);
                   
                     // Output an error message
-                    echo "Error executing SQL query.";
-                    echo '<div class="row">
-                    <div class="col-lg-3"></div>
-                    <div class="col-lg-6" id="results"><p id="results">Error executing SQL query.</p>';
-                    echo '</div>
-                    <div class="col-lg-3"></div>
-                    </div>';
+                    echo '<div class="alert alert-danger alert-dismissible fixed-bottom fade show" role="alert">';
+                    echo '<strong>Oh snap!</strong> Error executing SQL query.';
+                    echo '<button type="button" class="close" data-dismiss="alert" aria-label="Close">';
+                    echo '<span aria-hidden="true">&times;</span>';
+                    echo '</button>';
+                    echo '</div>';
                   }
                 }
-                else {
-                  // Output an error message
-                  
-                  echo "Error executing SQL query.";
-                    echo '<div class="row">
-                    <div class="col-lg-3"></div>
-                    <div class="col-lg-6" id="results"><p id="results">Search term not defined.</p>';
-                    echo '</div>
-                    <div class="col-lg-3"></div>
-                    </div>';
-                }
+                
               
               ?>
+              <div class="row">
+                <div class="col-lg-3"></div>
+                <div class="col-lg-6"><h2 class="fw-normal text-light">Search Results</h2></div>
+                <div class="col-lg-3"></div>
+              </div>
+              <div class="container">
+              <div class="col-lg-3"></div>
+                
+                <?php
+                  // Check if any search results were found
+                  if (count($data) > 0) {
+                    // Loop through each search result
+                    foreach ($data as $result) {
+                      // Get the title, link, and description from the search result
+                      $title = $result['title'];
+                      $link = $result['link'];
+                      $description = $result['description'];
+
+                      // Output the search result using HTML and CSS
+                      echo '<div class=" row search-result">';
+                        echo '<div class="col-lg-3"></div>';
+                        echo '<div class="col-lg-6">';
+                          echo '<h2 class="search-title"><a href="' . $link . '">' . $title . '</a></h2>';
+                          echo '<p class="search-description">' . $description . '</p>';
+                        echo '</div>';
+                        echo '<div class="col-lg-3"></div>';
+                      echo '</div>';
+                    }
+                  } else {
+                    // No search results found
+                    echo '<p>No results found.</p>';
+                  }
+                ?>
+              </div>
+                
+              
 
 
               
