@@ -160,7 +160,14 @@
                     }
                   } else {
                     // No search results found
-                    echo '<p>No results found.</p>';
+                    
+                    echo '<div class=" row search-result">';
+                        echo '<div class="col-lg-3"></div>';
+                        echo '<div class="col-lg-6">';
+                        echo '<h2>No results found.</h2>';
+                        echo '</div>';
+                        echo '<div class="col-lg-3"></div>';
+                      echo '</div>';
                   }
                 ?>
               </div>
