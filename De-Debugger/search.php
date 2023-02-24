@@ -86,6 +86,14 @@
                 </form></div>
                 <div class="col-lg-2"></div>
               </div>
+
+              <hr>
+              <div class="row">
+                <div class="col-lg-3"></div>
+                <div class="col-lg-6"><h2 class="fw-normal text-light">Search Results</h2></div>
+                <div class="col-lg-3"></div>
+              </div>
+
               <?php
 
                 // Check if the search term is defined
@@ -110,7 +118,12 @@
                     header('Content-Type: application/json');
                   
                     // Output the result as JSON
-                    echo json_encode($data);
+                    echo '<div class="row">
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-6" id="results">'; echo json_encode($data);
+                    echo '</div>
+                    <div class="col-lg-3"></div>
+                    </div>';
                   }
                   else {
                     // Close the database connection
@@ -118,37 +131,42 @@
                   
                     // Output an error message
                     echo "Error executing SQL query.";
+                    echo '<div class="row">
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-6" id="results">Error executing SQL query.';
+                    echo '</div>
+                    <div class="col-lg-3"></div>
+                    </div>';
                   }
                 }
                 else {
                   // Output an error message
-                  echo "Search term not defined.";
+                  
+                  echo "Error executing SQL query.";
+                    echo '<div class="row">
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-6" id="results">Search term not defined.';
+                    echo '</div>
+                    <div class="col-lg-3"></div>
+                    </div>';
                 }
               
               ?>
 
 
+              
               <hr>
               <div class="row">
-                <div class="col-lg-3"></div>
-                <div class="col-lg-6"><h2 class="fw-normal text-light">Search Results</h2></div>
-                <div class="col-lg-3"></div>
+                  <div class="col-lg-3"></div>
+                  <div class="col-lg-6"><h2 class="fw-normal text-light">Previous Searches</h2></div>
+                  <div class="col-lg-3"></div>
               </div>
               <div class="row">
-                <div class="col-lg-3"></div>
-                <div class="col-lg-6" id="results"></div>
-                <div class="col-lg-3"></div>
-              </div>
-              <hr>
-              <div class="row">
-                <div class="col-lg-3"></div>
-                <div class="col-lg-6"><h2 class="fw-normal text-light">Previous Searches</h2></div>
-                <div class="col-lg-3"></div>
-              </div>
-              <div class="row">
-                <div class="col-lg-3"></div>
-                <div class="col-lg-6"><!--TODO: add previously searched terms --></div>
-                <div class="col-lg-3"></div>
+                  <div class="col-lg-3"></div>
+                  <div class="col-lg-6">
+                    <div id="previous-search"></div>
+                  </div>
+                  <div class="col-lg-3"></div>
               </div>
             </div>
             
@@ -207,6 +225,22 @@
             </ul>
           </div>
     </footer>
+        <script>
+            const form = document.querySelector('form');
+            const input = document.querySelector('input[type="text"]');
+            const previousSearchDiv = document.getElementById('previous-search');
+            const previousSearchTerm = localStorage.getItem('previousSearch');
 
+            if (previousSearchTerm) {
+              previousSearchDiv.innerHTML = `Previous search: ${previousSearchTerm}`;
+            }
+          
+            form.addEventListener('submit', (event) => {
+              event.preventDefault();
+              const searchTerm = input.value;
+              localStorage.setItem('previousSearch', searchTerm);
+              form.submit();
+            });
+          </script>
     </body>
 </html>
