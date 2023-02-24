@@ -140,6 +140,7 @@
                 
                 <?php
                   // Check if any search results were found
+                  json_encode($data);
                   if (count($data) > 0) {
                     // Loop through each search result
                     foreach ($data as $result) {
