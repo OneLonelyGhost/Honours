@@ -91,7 +91,7 @@
                 $searchTerm = $_GET['term'];
 
                 // Connect to the database
-                $conn = mysqli_connect('host', 'username', 'password', 'database_name');
+                $conn = mysqli_connect('localhost', 'dedezvrg_admin', '7Nwiq?;xZ=JJ', 'dedezvrg_dedeBugger');
 
                 // Execute the SQL query
                 $result = mysqli_query($conn, "SELECT * FROM items WHERE name LIKE '%$searchTerm%' OR description LIKE '%$searchTerm%'");
