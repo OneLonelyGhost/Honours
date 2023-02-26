@@ -1,6 +1,0 @@
-[24-Feb-2023 11:58:35 UTC] PHP Notice:  Undefined index: term in /home/dedezvrg/public_html/search.php on line 91
-[24-Feb-2023 11:58:35 UTC] PHP Warning:  mysqli_fetch_all() expects parameter 1 to be mysqli_result, bool given in /home/dedezvrg/public_html/search.php on line 100
-[24-Feb-2023 11:58:35 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/dedezvrg/public_html/search.php:1) in /home/dedezvrg/public_html/search.php on line 103
-[24-Feb-2023 11:58:38 UTC] PHP Notice:  Undefined index: term in /home/dedezvrg/public_html/search.php on line 91
-[24-Feb-2023 11:58:38 UTC] PHP Warning:  mysqli_fetch_all() expects parameter 1 to be mysqli_result, bool given in /home/dedezvrg/public_html/search.php on line 100
-[24-Feb-2023 11:58:38 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/dedezvrg/public_html/search.php:1) in /home/dedezvrg/public_html/search.php on line 103

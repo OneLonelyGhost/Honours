@@ -78,19 +78,28 @@
               <div class="row">
                 <div class="col-lg-1 col-sm-1"></div>
                 <div class="col-lg-4 col-sm-6 rounded greyBox">
-                    
+                    <h2>For (each) Loops</h2>
+                    <p>The <strong>foreach</strong> loop in C++ or more specifically, 
+                    <strong>range-based for loop</strong> was introduced with the <strong>C++11</strong>. 
+                    This type of for loop structure eases the traversal over an iterable data set. 
+                    It does this by eliminating the initialization process and traversing over each and every element rather than 
+                    an iterator. So let us dig into the respective <strong>foreach</strong> loop structure.</p>
                 </div>
                 <div class="col-lg-1 col-sm-1"></div>
-                <div class="col-lg-4 col-sm-6 "><img src="img/" class="img-fluid rounded-1 shadow-lg" alt="Tutorial image"></div>
+                <div class="col-lg-4 col-sm-6 "><img src="img/forloop.png" class="img-fluid rounded-1 shadow-lg" alt="Tutorial image"></div>
                 <div class="col-lg-1 col-sm-1"></div>    
               </div>            
               <br>
               <div class="row">
                 <div class="col-lg-2 col-sm-1"></div>
-                <div class="col-lg-4 col-sm-6"><img src="img/" class="img-fluid rounded-1 shadow-lg " alt="Tutorial image"></div>
+                <div class="col-lg-4 col-sm-6"><img src="img/arrays.png" class="img-fluid rounded-1 shadow-lg " alt="Tutorial image"></div>
                 <div class="col-lg-1 col-sm-1"></div>
                 <div class="col-lg-4 col-sm-6 rounded blueBox">
-                    
+                    <h2>Arrays</h2>
+                    <p>In C++, an array is a variable that can store multiple values of the same type. For example,</p>
+                    <p>Suppose a class has 27 students, and we need to store the grades of all of them. Instead of creating 27 separate variables, we can simply create an array:</p>
+                    <p>Here, <code>grade</code> is an array that can hold a maximum of 27 elements of <code>double</code> type.</p>
+                    <p>In C++, the size and type of arrays cannot be changed after its declaration.</p>
                 </div>
                 <div class="col-lg-1 col-sm-1"></div>    
             </div>
@@ -99,19 +108,37 @@
                 <div class="row">
                     <div class="col-lg-1 col-sm-1"></div>
                     <div class="col-lg-4 col-sm-6 rounded greyBox">
-                        
+                      <h2>Working of the foreach loop in C++</h2>
+                      <p>So basically a <strong>for-each</strong> loop iterates over the elements of arrays, vectors, or any other data sets. It assigns the value of the current element to the variable iterator declared inside the loop. Let us take a closer look at the syntax:</p>
+                      
+                      <p>As we can see:</p>
+                      <ul>
+                      <li>During the loop initialization, the <strong>elemental variable declaration</strong> is the part where we need to declare the variable which will iterate over the array or vector. Here, the <code>type</code> is the data type of the <strong>variable_name</strong></li>
+                      <li><strong>array/vector name</strong> is the name of the respective data set over which the loop will iterate,</li>
+                      <li><strong>loop statements</strong> are the different operations which the user can choose to perform over the corresponding elements with the use of the iterating variable.</li>
+                      </ul>
+                      <p><strong>Note:</strong> It is suggested to keep the data type of the variable the same as that of the array or vector. If the data type is not the same, then the elements are going to be type-casted and then stored into the variable.</p> 
                     </div>
                     <div class="col-lg-1 col-sm-1"></div>
-                    <div class="col-lg-4 col-sm-6  "><img src="img/" class="img-fluid rounded-1 shadow-lg" alt="Tutorial image"></div>
+                    <div class="col-lg-4 col-sm-6  "><img src="img/for(each)loop.png" class="img-fluid rounded-1 shadow-lg" alt="Tutorial image"></div>
                     <div class="col-lg-1 col-sm-1"></div>    
                 </div>
               <br>
                 <div class="row">
                     <div class="col-lg-2 col-sm-1"></div>
-                    <div class="col-lg-4 col-sm-6  "><img src="img/" class="img-fluid rounded-1 shadow-lg" alt="Tutorial image"></div>
+                    <div class="col-lg-4 col-sm-6  "><img src="img/loopbreakdown.png" class="img-fluid rounded-1 shadow-lg" alt="Tutorial image"></div>
                     <div class="col-lg-1 col-sm-1"></div>
                     <div class="col-lg-4 col-sm-6 rounded blueBox ">
-                        
+                      <h2>Foreach loop breakdown</h2> 
+                      <p>Let’s break down the code and look at it line-by-line:</p>
+                      <ul>
+                        <li>An array <code>arr[]</code> is initialized with some values <strong>{1 , 2 , 3 , 4 , 5}</strong></li>
+                        <li>Inside the loop structure, <strong>‘i’</strong> is the variable that stores the value of the current array element</li>
+                        <li><code>arr</code> is the array name which also serves as the base address of the respective array</li>
+                        <li>As we can see, printing <strong>‘i’</strong> for each iteration gives us the corresponding array elements in contrast to the array indices in case of normal for loop</li>
+                      </ul>
+                      <p><strong>Please note</strong>: While declaring the variable ‘<strong>i</strong>’ we could also use the <code>auto</code> datatype instead of <code>int</code>. 
+                        This ensures that the type of the variable is deduced from the array type, and no data type conflicts occur.</p>
                     </div>
                     <div class="col-lg-1 col-sm-1"></div>    
                 </div>
@@ -119,20 +146,29 @@
                 <div class="row">
                     <div class="col-lg-1 col-sm-1"></div>
                     <div class="col-lg-4 col-sm-6 rounded greyBox">
-                        
+                        <h2>Vectors</h2>
+                        <p>Vectors in C++ are sequence containers representing arrays that can change their size during runtime. They use contiguous storage 
+                          locations for their elements just as efficiently as in arrays, which means that their elements can also be accessed using offsets 
+                          on regular pointers to its elements.</p>
+                        <p>Vectors are the dynamic arrays that are used to store data.It is different from arrays which store sequential data and are static 
+                          in nature, Vectors provide more flexibility to the program. Vectors can adjust their size automatically 
+                          when an element is inserted or deleted from it.</p>
                       </div>
                     <div class="col-lg-1 col-sm-1"></div>
-                    <div class="col-lg-4 col-sm-6 "><img src="img/" class="img-fluid rounded-1 shadow-lg" alt="Tutorial image"></div>
+                    <div class="col-lg-4 col-sm-6 "><img src="img/vectorinit.png" class="img-fluid rounded-1 shadow-lg" alt="Tutorial image"></div>
                     <div class="col-lg-1 col-sm-1"></div>    
                 </div>
               <br>
                 <div class="row">
                     <div class="col-lg-2 col-sm-1"></div>
-                    <div class="col-lg-4 col-sm-6 "><img src="img/" class="img-fluid rounded-1 shadow-lg rounded-1 shadow-lg" alt="Tutorial image"></div>
+                    <div class="col-lg-4 col-sm-6 "><img src="img/vector.png" class="img-fluid rounded-1 shadow-lg rounded-1 shadow-lg" alt="Tutorial image"></div>
                     <div class="col-lg-1 col-sm-1"></div>
                     <div class="col-lg-4 col-sm-6 rounded blueBox">
-                        
-
+                      <h2>Example of foreach loop for Vectors in C++</h2>
+                      <p>The following code illustrates the use of the <strong>for-each</strong> loop for iterating over a <code>vector</code>.</p>
+                      <p>The <strong>for-each</strong> loop for vector works in the same way as it does for an array. Furthermore, 
+                        the only differences are the vector declaration, initialization and the different operations that can be 
+                        performed over it.</p>
                     </div>
                     <div class="col-lg-1 col-sm-1"></div>    
                 </div>
