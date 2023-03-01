@@ -179,19 +179,27 @@
             <div class="row">
               <div class="col-lg-1 col-sm-1"></div>
               <div class="col-lg-4 col-sm-6 rounded greyBox">
+                 <h2>Uninitialized variables</h2> 
+                 <p><i>"Why doesn't my program enter the while loop?"</i></p>
+
+                  <p>In C++ variables are not initialized to zero. In the above snippet of code, count could be any value in the range of int. It might, for example, be 586, and in that situation the while loop's condition would never be true. Perhaps the output of the program would be to print the numbers from -1000 to 99. In that case, once again, the variable was assigned a memory location with garbage data that happened to evaluate to -1000.</p>
                   
+                  <p>Remember to initialize your variables.</p>
               </div>
               <div class="col-lg-1 col-sm-1"></div>
-              <div class="col-lg-4 col-sm-6 "><img src="img/" class="img-fluid rounded-1 shadow-lg" alt="Tutorial image"></div>
+              <div class="col-lg-4 col-sm-6 "><img src="img/uninitialized.png" class="img-fluid rounded-1 shadow-lg" alt="Tutorial image"></div>
               <div class="col-lg-1 col-sm-1"></div>    
             </div>            
             <hr>
             <div class="row">
               <div class="col-lg-2 col-sm-1"></div>
-              <div class="col-lg-4 col-sm-6"><img src="img/" class="img-fluid rounded-1 shadow-lg " alt="Tutorial image"></div>
+              <div class="col-lg-4 col-sm-6"><img src="img/undeclared.png" class="img-fluid rounded-1 shadow-lg " alt="Tutorial image"></div>
               <div class="col-lg-1 col-sm-1"></div>
               <div class="col-lg-4 col-sm-6 rounded blueBox">
-                  
+                 <h2>Undeclared Variables</h2>
+                 <p><i>"Huh? Why do I get an error?"</i></p>
+
+                 <p>Your compiler doesn't know what x means. You need to declare it as a variable before it can be used in any capacity.</p> 
               </div>
               <div class="col-lg-1 col-sm-1"></div>    
           </div>
@@ -200,19 +208,30 @@
               <div class="row">
                   <div class="col-lg-1 col-sm-1"></div>
                   <div class="col-lg-4 col-sm-6 rounded greyBox">
-                      
+                     <h2>Variable Name Styles</h2>
+                      <p>Less of an error, more just good practice. Choose a consistent style for variable names and stick to it. The exact style doesn't matter but consistency does. You'll be amazed at how much faster you can develop code and how many fewer compiler errors you will get if you adopt a consistent style.</p>
+                      <h4>Common Styles</h4>
+                      <ul>
+                          <li>First letter of each word capitalized: CatName</li>
+                          <li>Underscores: cat_name</li>
+                          <li>First letter lower case, first letter of every other word capitalized: catName</li>
+                          <li>No capital letters, no underscore: catname</li>
+                      </ul>
                   </div>
                   <div class="col-lg-1 col-sm-1"></div>
-                  <div class="col-lg-4 col-sm-6  "><img src="img/" class="img-fluid rounded-1 shadow-lg" alt="Tutorial image"></div>
+                  <div class="col-lg-4 col-sm-6  "><img src="img/variablenames.png" class="img-fluid rounded-1 shadow-lg" alt="Tutorial image"></div>
                   <div class="col-lg-1 col-sm-1"></div>    
               </div>
             <hr>
               <div class="row">
                   <div class="col-lg-2 col-sm-1"></div>
-                  <div class="col-lg-4 col-sm-6  "><img src="img/" class="img-fluid rounded-1 shadow-lg" alt="Tutorial image"></div>
+                  <div class="col-lg-4 col-sm-6  "><img src="img/Setting.png" class="img-fluid rounded-1 shadow-lg" alt="Tutorial image"></div>
                   <div class="col-lg-1 col-sm-1"></div>
                   <div class="col-lg-4 col-sm-6 rounded blueBox ">
-                      
+                     <h2>Setting a variable to an uninitialized value</h2>
+                     <p><i>"What's wrong with my program?"</i></p> 
+                     <p>Often beginning programmers believe that variables work like equations - if you assign a variable to equal the result of an operation on several other variables that whenever those variables change (a and b in this example), the value of the variable will change. </p>
+                       <p>In C++ assignment does not work this way: it's a one shot deal. Once you assign a value to a variable, it's that value until you reassign the values. In the example program, because a and b are not initialized, sum will equal an unknown random number, no matter what the user inputs.</p>
                   </div>
                   <div class="col-lg-1 col-sm-1"></div>    
               </div>
@@ -220,23 +239,17 @@
               <div class="row">
                   <div class="col-lg-1 col-sm-1"></div>
                   <div class="col-lg-4 col-sm-6 rounded greyBox">
-                      
+                      <h2>Integer division</h2>
+                      <p>1 and 2 are integer constants.
+
+                        To fix this, change at least one of them to a real constant, like <code>1.0</code> or <code>2.0</code>.</p>
                     </div>
                   <div class="col-lg-1 col-sm-1"></div>
-                  <div class="col-lg-4 col-sm-6 "><img src="img/" class="img-fluid rounded-1 shadow-lg" alt="Tutorial image"></div>
+                  <div class="col-lg-4 col-sm-6 "><img src="img/divide.png" class="img-fluid rounded-1 shadow-lg" alt="Tutorial image"></div>
                   <div class="col-lg-1 col-sm-1"></div>    
               </div>
             <hr>
-              <div class="row">
-                  <div class="col-lg-2 col-sm-1"></div>
-                  <div class="col-lg-4 col-sm-6 "><img src="img/" class="img-fluid rounded-1 shadow-lg rounded-1 shadow-lg" alt="Tutorial image"></div>
-                  <div class="col-lg-1 col-sm-1"></div>
-                  <div class="col-lg-4 col-sm-6 rounded blueBox">
-                      
-
-                  </div>
-                  <div class="col-lg-1 col-sm-1"></div>    
-              </div>
+              
 
             
             
