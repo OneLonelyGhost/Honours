@@ -1,5 +1,0 @@
----
-deployment:
-  tasks:
-    - export DEPLOYPATH=/home/dedezvrg/public_html/
-    - /home/dedezvrg/repositories/Honours -R De-DeBugger $DEPLOYPATH
