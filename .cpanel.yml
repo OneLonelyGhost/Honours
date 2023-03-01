@@ -1,5 +1,9 @@
 ---
 deployment:
+  webhook:
+    url: <webhook URL>
+    secret: <webhook secret>
+    events: ['push']
   tasks:
     - export DEPLOYPATH=/home/dedezvrg/public_html/
     - /bin/rm -Rf $DEPLOYPATH
