@@ -1,284 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="landing page for honours project artifact">
-    <meta name="author" content="Charlie Mulholland | 1900313">
-    <title>De-DeBugger</title>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="landing page for honours project artifact">
+  <meta name="author" content="Charlie Mulholland | 1900313">
+  <title>De-DeBugger</title>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.bundle.min.js.map"></script>
-    <script type="text/javascript" src="js/other.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.bundle.min.js.map"></script>
+  <script type="text/javascript" src="js/other.js"></script>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <link href="css/headers.css" rel="stylesheet">
-    <link href="css/carousel.css" rel="stylesheet">
-    <link href="css/other.css" rel="stylesheet">
+  <link href="css/headers.css" rel="stylesheet">
+  <link href="css/carousel.css" rel="stylesheet">
+  <link href="css/other.css" rel="stylesheet">
 
 
 
-    </head>
-    <body id="tutorial" class ="tut">
-      <header>
-        <div class="px-3 py-2 text-bg-dark">
-          <div class="container">
-            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-              <a href = "index.html" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
-                <img class="bi me-2" width="50%" height="50%" src="img/Logo.png" ></img>
+</head>
+
+<body id="tutorial" class="tut">
+  <header>
+    <div class="px-3 py-2 text-bg-dark">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <a href="index.html"
+            class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+            <img class="bi me-2" width="50%" height="50%" src="img/Logo.png"></img>
+          </a>
+
+          <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+            <li>
+              <a href="index.html" class="nav-link text-white">
+                <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                  <use xlink:href="#home" />
+                </svg>
+                Home
               </a>
-
-              <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
-                <li>
-                  <a href="index.html" class="nav-link text-white">
-                    <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#home"/></svg>
-                    Home
-                  </a>
-                </li>
-                <li>
-                  <a href="search.php" class="nav-link text-white">
-                    <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#speedometer2"/></svg>
-                    Search
-                  </a>
-                </li>
-                <li>
-                  <a href="tutorial.html" class="nav-link text-secondary">
-                    <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#table"/></svg>
-                    Tutorials
-                  </a>
-                </li>
-                <li>
-                  <a href="help.html" class="nav-link text-white">
-                    <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#grid"/></svg>
-                    Help
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
+            </li>
+            <li>
+              <a href="search.php" class="nav-link text-white">
+                <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                  <use xlink:href="#speedometer2" />
+                </svg>
+                Search
+              </a>
+            </li>
+            <li>
+              <a href="tutorial.html" class="nav-link text-secondary">
+                <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                  <use xlink:href="#table" />
+                </svg>
+                Tutorials
+              </a>
+            </li>
+            <li>
+              <a href="help.html" class="nav-link text-white">
+                <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                  <use xlink:href="#grid" />
+                </svg>
+                Help
+              </a>
+            </li>
+          </ul>
         </div>
-        </header>
+      </div>
+    </div>
+  </header>
 
-        <main class="my-5 py-2">
+  <main class="my-5 py-2">
 
-            <div class="p-5 mb-4 rounded-3">
-                <div class="container-fluid py-5">
-                <img class="bd-placeholder-img-lg" height="100%" width="100%" src="img/TutorialLong.png"></img>
-                  <h1 class="display-5 fw-light text-light">C++ Solutions.</h1>
-                  <p class="col-md-8 fs-4 text-light">Learn the basic syntax of the C++ language with our easy to follow cheatsheet.</p>
+    <div class="p-5 mb-4 rounded-3">
+      <div class="container-fluid py-5">
+        <img class="bd-placeholder-img-lg" height="100%" width="100%" src="img/TutorialLong.png"></img>
+        <h1 class="display-5 fw-light text-light">C++ Solutions.</h1>
+        <p class="col-md-8 fs-4 text-light">Learn the basic syntax of the C++ language with our easy to follow
+          cheatsheet.</p>
 
-                </div>
-            </div>
-            <div class="container-fluid">
+      </div>
+    </div>
+    <div class="container-fluid">
 
-              <div class="row">
-                <div class="col-lg-1 col-sm-1"></div>
-                <div class="col-lg-4 col-sm-6 rounded greyBox">
-                    <h2>Program Structure</h2>
-                    <p><code>#include</code> statements at the beginning of the program, which allow access to the functionalities of the included libraries. <code>main()</code> function, which is run when the program is executed. <code>return 0</code> at the end of the <code>main()</code> function, which indicates that the program should output 0 if it ran without issues</p>
+      <div class="row">
+        <div class="col-lg-1 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6 rounded greyBox">
+          <h2>Program Structure</h2>
+          <p><code>#include</code> statements at the beginning of the program, which allow access to the functionalities
+            of the included libraries. <code>main()</code> function, which is run when the program is executed.
+            <code>return 0</code> at the end of the <code>main()</code> function, which indicates that the program
+            should output 0 if it ran without issues</p>
 
-                </div>
-                <div class="col-lg-1 col-sm-1"></div>
-                <div class="col-lg-4 col-sm-6 "><img src="img/progStructure.png" class="img-fluid rounded-1 shadow-lg" alt="Tutorial image"></div>
-                <div class="col-lg-1 col-sm-1"></div>    
-              </div>            
-              <br>
-              <div class="row">
-                <div class="col-lg-2 col-sm-1"></div>
-                <div class="col-lg-4 col-sm-6"><img src="img/comment.png" class="img-fluid rounded-1 shadow-lg " alt="Tutorial image"></div>
-                <div class="col-lg-1 col-sm-1"></div>
-                <div class="col-lg-4 col-sm-6 rounded blueBox">
-                    <h2>Comments</h2>
-                    <p>Comments do not affect the performance of a program because they are ignored by the compiler.</p>
-                    
-                    <p><u><strong>In C++, there are two types of comments:</strong></u></p>
-                    <ul>
-                    <li>Single-line: begin with <code>//</code>.</li>
-                    <li>Multi-line: begin with <code>/*</code> and end with <code>*/</code>.</li>
-                    </ul>
-                </div>
-                <div class="col-lg-1 col-sm-1"></div>    
-            </div>
-            
-              <br>
-                <div class="row">
-                    <div class="col-lg-1 col-sm-1"></div>
-                    <div class="col-lg-4 col-sm-6 rounded greyBox">
-                        <h2>Input and Output</h2>
-                        <p>
-                          Input and output make C++ programs more interactive.</p>
-                          <p>
-                            Including the iostream library is necessary and must be placed at the beginning of the program to access input and output.</p>
-                            <code>std::cout</code> is the “character output” and it is used together with <code>&lt;&lt;</code> to print to the terminal.
-                            <code>std::cin</code> is the “character input” and it is used together with <code>&gt;&gt;</code> to read user input.
-                            <code>std::endl</code> or <code>\n</code> can be used to insert a new line.
-                          </p>
-                    </div>
-                    <div class="col-lg-1 col-sm-1"></div>
-                    <div class="col-lg-4 col-sm-6  "><img src="img/inOut.png" class="img-fluid rounded-1 shadow-lg" alt="Tutorial image"></div>
-                    <div class="col-lg-1 col-sm-1"></div>    
-                </div>
-              <br>
-                <div class="row">
-                    <div class="col-lg-2 col-sm-1"></div>
-                    <div class="col-lg-4 col-sm-6  "><img src="img/variables.png" class="img-fluid rounded-1 shadow-lg" alt="Tutorial image"></div>
-                    <div class="col-lg-1 col-sm-1"></div>
-                    <div class="col-lg-4 col-sm-6 rounded blueBox ">
-                        <h2>Variables</h2>
-                        <p>
-                          Used to store and retrieve data. When declaring a variable, it must be given a data type and a name. Variables of the same type can be declared in a single statement using a comma-separated list. 
-                        </p>
-                        <p>
-                          Variables can be declared with the <code>const</code>  keyword, which prevents their value from being changed later.
-                        </p>
-                    </div>
-                    <div class="col-lg-1 col-sm-1"></div>    
-                </div>
-              <br>
-                <div class="row">
-                    <div class="col-lg-1 col-sm-1"></div>
-                    <div class="col-lg-4 col-sm-6 rounded greyBox">
-                        <h2>References and Pointers</h2>
-                        <p>
-                          C++ provides two powerful features for memory manipulation:
-
-                          
-
-                          <ul>
-                            <li><code>&</code> References: aliases to existing variables</li>
-                            <li><code>*</code> Pointers: store memory address as its value</li>
-                          </ul>
-                          Reference variables are created using the <code>&</code> symbol. <code>&</code> is also used to access the memory address of a variable.
-                        </p>
-                      </div>
-                    <div class="col-lg-1 col-sm-1"></div>
-                    <div class="col-lg-4 col-sm-6 "><img src="img/refPoint.png" class="img-fluid rounded-1 shadow-lg" alt="Tutorial image"></div>
-                    <div class="col-lg-1 col-sm-1"></div>    
-                </div>
-              <br>
-                <div class="row">
-                    <div class="col-lg-2 col-sm-1"></div>
-                    <div class="col-lg-4 col-sm-6 "><img src="img/arith.png" class="img-fluid rounded-1 shadow-lg rounded-1 shadow-lg" alt="Tutorial image"></div>
-                    <div class="col-lg-1 col-sm-1"></div>
-                    <div class="col-lg-4 col-sm-6 rounded blueBox">
-                        <h2>Arithmetic Operators</h2>
-                      <p>
-                        C++ supports different types of arithmetic operators that can perform common mathematical operations:
-
-                        <ul>
-                          <li><code>+</code> addition</li>
-                          <li><code>-</code> subtraction</li>
-                          <li><code>*</code> multiplication</li>
-                          <li><code>/</code> division</li>
-                          <li><code>%</code> modulo (yields the remainder)</li>
-                        </ul>
-                      </p>
-
-                    </div>
-                    <div class="col-lg-1 col-sm-1"></div>    
-                </div>
-
-              
-              
-            </div>
-
-            <div class="p-5 mb-4 rounded-3">
-              <div class="container-fluid py-5">
-                <h1 class="display-5 fw-light text-light">Common Errors.</h1>
-                <p class="col-md-8 fs-4 text-light">Common syntax errors to avoid while coding.</p>
-
-              </div>
-          </div>
-        <div class="container-fluid">
-
-            <div class="row">
-              <div class="col-lg-1 col-sm-1"></div>
-              <div class="col-lg-4 col-sm-6 rounded greyBox">
-                  <h2>Syntax Error</h2>
-                  <p>A syntax error occurs when you write a statement that is not valid according to the grammar of the C++ language</p>
-                  <p>This includes errors such as missing semicolons, using undeclared variables, mismatched parentheses or braces, etc… For example:</p>
-              </div>
-              <div class="col-lg-1 col-sm-1"></div>
-              <div class="col-lg-4 col-sm-6 "><img src="img/syntax.png" class="img-fluid rounded-1 shadow-lg" alt="Tutorial image"></div>
-              <div class="col-lg-1 col-sm-1"></div>    
-            </div>            
-            <br>
-            <div class="row">
-              <div class="col-lg-2 col-sm-1"></div>
-              <div class="col-lg-4 col-sm-6"><img src="img/symantic.png" class="img-fluid rounded-1 shadow-lg " alt="Tutorial image"></div>
-              <div class="col-lg-1 col-sm-1"></div>
-              <div class="col-lg-4 col-sm-6 rounded blueBox">
-                  <h2>Semantic Error</h2>
-                  <p>Once your program is compiling correctly, getting it to actually produce the result(s) you want can be tricky. A semantic error occurs when a statement is syntactically valid, but does not do what the programmer intended.</p>
-                  <p>More often these will just produce the wrong value or behavior:</p>
-              </div>
-              <div class="col-lg-1 col-sm-1"></div>    
-            </div>
-          
-            <br>
-              <div class="row">
-                  <div class="col-lg-1 col-sm-1"></div>
-                  <div class="col-lg-4 col-sm-6 rounded greyBox">
-                      <h2>Logical Error</h2>
-                      <p>A logic error is an error in a program's source code that gives way to unanticipated and erroneous behavior. A logic error is classified as a type of runtime error that can result in a program producing an incorrect output.</p>
-                  </div>
-                  <div class="col-lg-1 col-sm-1"></div>
-                  <div class="col-lg-4 col-sm-6  "><img src="img/logic.png" class="img-fluid rounded-1 shadow-lg" alt="Tutorial image"></div>
-                  <div class="col-lg-1 col-sm-1"></div>    
-              </div>
         </div>
+        <div class="col-lg-1 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6 "><img src="img/progStructure.png" class="img-fluid rounded-1 shadow-lg"
+            alt="Tutorial image"></div>
+        <div class="col-lg-1 col-sm-1"></div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-lg-2 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6"><img src="img/comment.png" class="img-fluid rounded-1 shadow-lg "
+            alt="Tutorial image"></div>
+        <div class="col-lg-1 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6 rounded blueBox">
+          <h2>Comments</h2>
+          <p>Comments do not affect the performance of a program because they are ignored by the compiler.</p>
 
-            <script src="js/bootstrap.bundle.min.js"></script>
-        </main>
+          <p><u><strong>In C++, there are two types of comments:</strong></u></p>
+          <ul>
+            <li>Single-line: begin with <code>//</code>.</li>
+            <li>Multi-line: begin with <code>/*</code> and end with <code>*/</code>.</li>
+          </ul>
+        </div>
+        <div class="col-lg-1 col-sm-1"></div>
+      </div>
 
-        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-0 border-top text-bg-dark">
-          <div class="col mb-3">
-            <a href = "index.html" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
-              <img class="bi me-2" width="100%" height="100%" role="img" aria-label="Logo" src="img/Logo.png"></img>
-            </a>
-            <p class="text-muted">&copy; 2022</p>
-          </div>
+      <br>
+      <div class="row">
+        <div class="col-lg-1 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6 rounded greyBox">
+          <h2>Input and Output</h2>
+          <p>
+            Input and output make C++ programs more interactive.</p>
+          <p>
+            Including the iostream library is necessary and must be placed at the beginning of the program to access
+            input and output.</p>
+          <code>std::cout</code> is the “character output” and it is used together with <code>&lt;&lt;</code> to print
+          to the terminal.
+          <code>std::cin</code> is the “character input” and it is used together with <code>&gt;&gt;</code> to read user
+          input.
+          <code>std::endl</code> or <code>\n</code> can be used to insert a new line.
+          </p>
+        </div>
+        <div class="col-lg-1 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6  "><img src="img/inOut.png" class="img-fluid rounded-1 shadow-lg"
+            alt="Tutorial image"></div>
+        <div class="col-lg-1 col-sm-1"></div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-lg-2 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6  "><img src="img/variables.png" class="img-fluid rounded-1 shadow-lg"
+            alt="Tutorial image"></div>
+        <div class="col-lg-1 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6 rounded blueBox ">
+          <h2>Variables</h2>
+          <p>
+            Used to store and retrieve data. When declaring a variable, it must be given a data type and a name.
+            Variables of the same type can be declared in a single statement using a comma-separated list.
+          </p>
+          <p>
+            Variables can be declared with the <code>const</code> keyword, which prevents their value from being changed
+            later.
+          </p>
+        </div>
+        <div class="col-lg-1 col-sm-1"></div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-lg-1 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6 rounded greyBox">
+          <h2>References and Pointers</h2>
+          <p>
+            C++ provides two powerful features for memory manipulation:
 
-          <div class="col mb-3">
-
-          </div>
-
-          <div class="col mb-3">
-            <h5>Navigate</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="tutorial.html" class="nav-link p-0 text-muted">Tutorials</a></li>
-              <li class="nav-item mb-2"><a href="search.php" class="nav-link p-0 text-muted">Search</a></li>
-              <li class="nav-item mb-2"><a href="help.html" class="nav-link p-0 text-muted">Help</a></li>
 
 
-            </ul>
-          </div>
+          <ul>
+            <li><code>&</code> References: aliases to existing variables</li>
+            <li><code>*</code> Pointers: store memory address as its value</li>
+          </ul>
+          Reference variables are created using the <code>&</code> symbol. <code>&</code> is also used to access the
+          memory address of a variable.
+          </p>
+        </div>
+        <div class="col-lg-1 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6 "><img src="img/refPoint.png" class="img-fluid rounded-1 shadow-lg"
+            alt="Tutorial image"></div>
+        <div class="col-lg-1 col-sm-1"></div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-lg-2 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6 "><img src="img/arith.png"
+            class="img-fluid rounded-1 shadow-lg rounded-1 shadow-lg" alt="Tutorial image"></div>
+        <div class="col-lg-1 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6 rounded blueBox">
+          <h2>Arithmetic Operators</h2>
+          <p>
+            C++ supports different types of arithmetic operators that can perform common mathematical operations:
 
-          <div class="col mb-3">
-            <h5>Policy</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Legal</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Privacy</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Cookies</a></li>
+          <ul>
+            <li><code>+</code> addition</li>
+            <li><code>-</code> subtraction</li>
+            <li><code>*</code> multiplication</li>
+            <li><code>/</code> division</li>
+            <li><code>%</code> modulo (yields the remainder)</li>
+          </ul>
+          </p>
+
+        </div>
+        <div class="col-lg-1 col-sm-1"></div>
+      </div>
 
 
-            </ul>
-          </div>
 
-          <div class="col mb-3 ">
-            <h5>Socials</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Twitter</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Instagram</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Reddit</a></li>
+    </div>
+
+    <div class="p-5 mb-4 rounded-3">
+      <div class="container-fluid py-5">
+        <h1 class="display-5 fw-light text-light">Common Errors.</h1>
+        <p class="col-md-8 fs-4 text-light">Common syntax errors to avoid while coding.</p>
+
+      </div>
+    </div>
+    <div class="container-fluid">
+
+      <div class="row">
+        <div class="col-lg-1 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6 rounded greyBox">
+          <h2>Syntax Error</h2>
+          <p>A syntax error occurs when you write a statement that is not valid according to the grammar of the C++
+            language</p>
+          <p>This includes errors such as missing semicolons, using undeclared variables, mismatched parentheses or
+            braces, etc… For example:</p>
+        </div>
+        <div class="col-lg-1 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6 "><img src="img/syntax.png" class="img-fluid rounded-1 shadow-lg"
+            alt="Tutorial image"></div>
+        <div class="col-lg-1 col-sm-1"></div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-lg-2 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6"><img src="img/symantic.png" class="img-fluid rounded-1 shadow-lg "
+            alt="Tutorial image"></div>
+        <div class="col-lg-1 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6 rounded blueBox">
+          <h2>Semantic Error</h2>
+          <p>Once your program is compiling correctly, getting it to actually produce the result(s) you want can be
+            tricky. A semantic error occurs when a statement is syntactically valid, but does not do what the programmer
+            intended.</p>
+          <p>More often these will just produce the wrong value or behavior:</p>
+        </div>
+        <div class="col-lg-1 col-sm-1"></div>
+      </div>
+
+      <br>
+      <div class="row">
+        <div class="col-lg-1 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6 rounded greyBox">
+          <h2>Logical Error</h2>
+          <p>A logic error is an error in a program's source code that gives way to unanticipated and erroneous
+            behavior. A logic error is classified as a type of runtime error that can result in a program producing an
+            incorrect output.</p>
+        </div>
+        <div class="col-lg-1 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6  "><img src="img/logic.png" class="img-fluid rounded-1 shadow-lg"
+            alt="Tutorial image"></div>
+        <div class="col-lg-1 col-sm-1"></div>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </main>
+
+  <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-0 border-top text-bg-dark">
+    <div class="col mb-3">
+      <a href="index.html" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+        <img class="bi me-2" width="100%" height="100%" role="img" aria-label="Logo" src="img/Logo.png"></img>
+      </a>
+      <p class="text-muted">&copy; 2022</p>
+    </div>
+
+    <div class="col mb-3">
+
+    </div>
+
+    <div class="col mb-3">
+      <h5>Navigate</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="tutorial.html" class="nav-link p-0 text-muted">Tutorials</a></li>
+        <li class="nav-item mb-2"><a href="search.php" class="nav-link p-0 text-muted">Search</a></li>
+        <li class="nav-item mb-2"><a href="help.html" class="nav-link p-0 text-muted">Help</a></li>
 
 
-            </ul>
-          </div>
-    </footer>
+      </ul>
+    </div>
 
-    </body>
+    <div class="col mb-3">
+      <h5>Policy</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Legal</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Privacy</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Cookies</a></li>
+
+
+      </ul>
+    </div>
+
+    <div class="col mb-3 ">
+      <h5>Socials</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Twitter</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Instagram</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Reddit</a></li>
+
+
+      </ul>
+    </div>
+  </footer>
+
+</body>
+
 </html>

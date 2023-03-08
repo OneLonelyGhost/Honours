@@ -1,373 +1,442 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="landing page for honours project artifact">
-    <meta name="author" content="Charlie Mulholland | 1900313">
-    <title>De-DeBugger</title>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="landing page for honours project artifact">
+  <meta name="author" content="Charlie Mulholland | 1900313">
+  <title>De-DeBugger</title>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.bundle.min.js.map"></script>
-    <script type="text/javascript" src="js/other.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.bundle.min.js.map"></script>
+  <script type="text/javascript" src="js/other.js"></script>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <link href="css/headers.css" rel="stylesheet">
-    <link href="css/carousel.css" rel="stylesheet">
-    <link href="css/other.css" rel="stylesheet">
+  <link href="css/headers.css" rel="stylesheet">
+  <link href="css/carousel.css" rel="stylesheet">
+  <link href="css/other.css" rel="stylesheet">
 
 
 
-    </head>
-    <body id="tutorial" class ="tut">
-      <header>
-        <div class="px-3 py-2 text-bg-dark">
-          <div class="container">
-            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-              <a href = "index.html" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
-                <img class="bi me-2" width="50%" height="50%" src="img/Logo.png" >
+</head>
+
+<body id="tutorial" class="tut">
+  <header>
+    <div class="px-3 py-2 text-bg-dark">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <a href="index.html"
+            class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+            <img class="bi me-2" width="50%" height="50%" src="img/Logo.png">
+          </a>
+
+          <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+            <li>
+              <a href="index.html" class="nav-link text-white">
+                <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                  <use xlink:href="#home" />
+                </svg>
+                Home
               </a>
-
-              <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
-                <li>
-                  <a href="index.html" class="nav-link text-white">
-                    <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#home"/></svg>
-                    Home
-                  </a>
-                </li>
-                <li>
-                  <a href="search.php" class="nav-link text-white">
-                    <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#speedometer2"/></svg>
-                    Search
-                  </a>
-                </li>
-                <li>
-                  <a href="tutorial.html" class="nav-link text-secondary">
-                    <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#table"/></svg>
-                    Tutorials
-                  </a>
-                </li>
-                <li>
-                  <a href="help.html" class="nav-link text-white">
-                    <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#grid"/></svg>
-                    Help
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
+            </li>
+            <li>
+              <a href="search.php" class="nav-link text-white">
+                <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                  <use xlink:href="#speedometer2" />
+                </svg>
+                Search
+              </a>
+            </li>
+            <li>
+              <a href="tutorial.html" class="nav-link text-secondary">
+                <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                  <use xlink:href="#table" />
+                </svg>
+                Tutorials
+              </a>
+            </li>
+            <li>
+              <a href="help.html" class="nav-link text-white">
+                <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                  <use xlink:href="#grid" />
+                </svg>
+                Help
+              </a>
+            </li>
+          </ul>
         </div>
-        </header>
+      </div>
+    </div>
+  </header>
 
-        <main class="my-5 py-2">
+  <main class="my-5 py-2">
 
-            <div class="p-5 mb-4 rounded-3">
-                <div class="container-fluid py-5">
-                <img class="bd-placeholder-img-lg" height="100%" width="100%" src="img/TutorialLong.png">
-                  <h1 class="display-5 fw-light text-light">C++ Solutions.</h1>
-                  <p class="col-md-8 fs-4 text-light">Streamline your code and automate repetitive tasks by mastering C++ loops and arrays with our step-by-step guide. </p>
+    <div class="p-5 mb-4 rounded-3">
+      <div class="container-fluid py-5">
+        <img class="bd-placeholder-img-lg" height="100%" width="100%" src="img/TutorialLong.png">
+        <h1 class="display-5 fw-light text-light">C++ Solutions.</h1>
+        <p class="col-md-8 fs-4 text-light">Streamline your code and automate repetitive tasks by mastering C++ loops
+          and arrays with our step-by-step guide. </p>
 
-                </div>
-            </div>
-            <div class="container-fluid">
+      </div>
+    </div>
+    <div class="container-fluid">
 
-              <div class="row">
-                <div class="col-lg-1 col-sm-1"></div>
-                <div class="col-lg-4 col-sm-6 rounded greyBox">
-                    <h2>For (each) Loops</h2>
-                    <p>The <strong>foreach</strong> loop in C++ or more specifically, 
-                    <strong>range-based for loop</strong> was introduced with the <strong>C++11</strong>. 
-                    This type of for loop structure eases the traversal over an iterable data set. 
-                    It does this by eliminating the initialization process and traversing over each and every element rather than 
-                    an iterator. So let us dig into the respective <strong>foreach</strong> loop structure.</p>
-                </div>
-                <div class="col-lg-1 col-sm-1"></div>
-                <div class="col-lg-4 col-sm-6 "><img src="img/forloop.png" class="img-fluid rounded-1 shadow-lg" alt="Tutorial image"></div>
-                <div class="col-lg-1 col-sm-1"></div>    
-              </div>            
-              <br>
-              <div class="row">
-                <div class="col-lg-2 col-sm-1"></div>
-                <div class="col-lg-4 col-sm-6"><img src="img/arrays.png" class="img-fluid rounded-1 shadow-lg " alt="Tutorial image"></div>
-                <div class="col-lg-1 col-sm-1"></div>
-                <div class="col-lg-4 col-sm-6 rounded blueBox">
-                    <h2>Arrays</h2>
-                    <p>In C++, an array is a variable that can store multiple values of the same type. For example,</p>
-                    <p>Suppose a class has 27 students, and we need to store the grades of all of them. Instead of creating 27 separate variables, we can simply create an array:</p>
-                    <p>Here, <code>grade</code> is an array that can hold a maximum of 27 elements of <code>double</code> type.</p>
-                    <p>In C++, the size and type of arrays cannot be changed after its declaration.</p>
-                </div>
-                <div class="col-lg-1 col-sm-1"></div>    
-            </div>
-            
-              <br>
-                <div class="row">
-                    <div class="col-lg-1 col-sm-1"></div>
-                    <div class="col-lg-4 col-sm-6 rounded greyBox">
-                      <h2>Working of the foreach loop in C++</h2>
-                      <p>So basically a <strong>for-each</strong> loop iterates over the elements of arrays, vectors, or any other data sets. It assigns the value of the current element to the variable iterator declared inside the loop. Let us take a closer look at the syntax:</p>
-                      
-                      <p>As we can see:</p>
-                      <ul>
-                      <li>During the loop initialization, the <strong>elemental variable declaration</strong> is the part where we need to declare the variable which will iterate over the array or vector. Here, the <code>type</code> is the data type of the <strong>variable_name</strong></li>
-                      <li><strong>array/vector name</strong> is the name of the respective data set over which the loop will iterate,</li>
-                      <li><strong>loop statements</strong> are the different operations which the user can choose to perform over the corresponding elements with the use of the iterating variable.</li>
-                      </ul>
-                      <p><strong>Note:</strong> It is suggested to keep the data type of the variable the same as that of the array or vector. If the data type is not the same, then the elements are going to be type-casted and then stored into the variable.</p> 
-                    </div>
-                    <div class="col-lg-1 col-sm-1"></div>
-                    <div class="col-lg-4 col-sm-6  "><img src="img/for(each)loop.png" class="img-fluid rounded-1 shadow-lg" alt="Tutorial image"></div>
-                    <div class="col-lg-1 col-sm-1"></div>    
-                </div>
-              <br>
-                <div class="row">
-                    <div class="col-lg-2 col-sm-1"></div>
-                    <div class="col-lg-4 col-sm-6  "><img src="img/loopbreakdown.png" class="img-fluid rounded-1 shadow-lg" alt="Tutorial image"></div>
-                    <div class="col-lg-1 col-sm-1"></div>
-                    <div class="col-lg-4 col-sm-6 rounded blueBox ">
-                      <h2>Foreach loop breakdown</h2> 
-                      <p>Let's break down the code and look at it line-by-line:</p>
-                      <ul>
-                        <li>An array <code>arr[]</code> is initialized with some values <strong>{1 , 2 , 3 , 4 , 5}</strong></li>
-                        <li>Inside the loop structure, <strong>'i'</strong> is the variable that stores the value of the current array element</li>
-                        <li><code>arr</code> is the array name which also serves as the base address of the respective array</li>
-                        <li>As we can see, printing <strong>'i'</strong> for each iteration gives us the corresponding array elements in contrast to the array indices in case of normal for loop</li>
-                      </ul>
-                      <p><strong>Please note</strong>: While declaring the variable '<strong>i</strong>' we could also use the <code>auto</code> datatype instead of <code>int</code>. 
-                        This ensures that the type of the variable is deduced from the array type, and no data type conflicts occur.</p>
-                    </div>
-                    <div class="col-lg-1 col-sm-1"></div>    
-                </div>
-              <br>
-                <div class="row">
-                    <div class="col-lg-1 col-sm-1"></div>
-                    <div class="col-lg-4 col-sm-6 rounded greyBox">
-                        <h2>Vectors</h2>
-                        <p>Vectors in C++ are sequence containers representing arrays that can change their size during runtime. They use contiguous storage 
-                          locations for their elements just as efficiently as in arrays, which means that their elements can also be accessed using offsets 
-                          on regular pointers to its elements.</p>
-                        <p>Vectors are the dynamic arrays that are used to store data.It is different from arrays which store sequential data and are static 
-                          in nature, Vectors provide more flexibility to the program. Vectors can adjust their size automatically 
-                          when an element is inserted or deleted from it.</p>
-                      </div>
-                    <div class="col-lg-1 col-sm-1"></div>
-                    <div class="col-lg-4 col-sm-6 "><img src="img/vectorinit.png" class="img-fluid rounded-1 shadow-lg" alt="Tutorial image"></div>
-                    <div class="col-lg-1 col-sm-1"></div>    
-                </div>
-              <br>
-                <div class="row">
-                    <div class="col-lg-2 col-sm-1"></div>
-                    <div class="col-lg-4 col-sm-6 "><img src="img/vector.png" class="img-fluid rounded-1 shadow-lg rounded-1 shadow-lg" alt="Tutorial image"></div>
-                    <div class="col-lg-1 col-sm-1"></div>
-                    <div class="col-lg-4 col-sm-6 rounded blueBox">
-                      <h2>Example of foreach loop for Vectors in C++</h2>
-                      <p>The following code illustrates the use of the <strong>for-each</strong> loop for iterating over a <code>vector</code>.</p>
-                      <p>The <strong>for-each</strong> loop for vector works in the same way as it does for an array. Furthermore, 
-                        the only differences are the vector declaration, initialization and the different operations that can be 
-                        performed over it.</p>
-                    </div>
-                    <div class="col-lg-1 col-sm-1"></div>    
-                </div>
-                <br>
-                <div class="row">
-                    <div class="col-lg-1 col-sm-1"></div>
-                    <div class="col-lg-4 col-sm-6 rounded greyBox">
-                        <h2>while loops</h2>
-                        <ul>
-                            <li><code>condition</code> is an expression of type <code>boolean</code></li>
-                            <li><code>statement</code> is a single statement (also called the <strong>body</strong> of the loop)</li>
-                        </ul>
-                        <p><strong>Note:</strong> since, by making use of a block, it is possible to group several statements into a single composite statement, it is in fact possible to have more than one statement in the body of the loop.</p>
-                      </div>
-                    <div class="col-lg-1 col-sm-1"></div>
-                    <div class="col-lg-4 col-sm-6 "><img src="img/while.png" class="img-fluid rounded-1 shadow-lg" alt="Tutorial image"></div>
-                    <div class="col-lg-1 col-sm-1"></div>    
-                </div>
-              <br>
-                <div class="row">
-                    <div class="col-lg-2 col-sm-1"></div>
-                    <div class="col-lg-4 col-sm-6 "><img src="img/whileexamp.png" class="img-fluid rounded-1 shadow-lg rounded-1 shadow-lg" alt="Tutorial image"></div>
-                    <div class="col-lg-1 col-sm-1"></div>
-                    <div class="col-lg-4 col-sm-6 rounded blueBox">
-                        <h2>while loop example</h2>
-                        <ul>
-                            <li>First, the condition is evaluated.</li>
-                            <li>If it is true, the statement is executed and the value of the condition is evaluated again, continuing in this way until the condition becomes false.</li>
-                            <li>At this point the statement immediately following the while loop is executed.</li>
-                        </ul>
-                        <p>Hence, the body of the loop is executed as long as the condition stays true. As soon as it becomes false we exit the loop and continue with the following statement.</p>
-                    </div>
-                    <div class="col-lg-1 col-sm-1"></div>    
-                </div>
-                <br>
-                <div class="row">
-                    <div class="col-lg-1 col-sm-1"></div>
-                    <div class="col-lg-4 col-sm-6 rounded greyBox">
-                        <h2>do loops</h2>
-                        <p>In a while loop, the condition of end of loop is checked at the beginning of each iteration. A do loop is similar to a while loop, with the only difference that the condition of end of loop is checked at the end of each iteration.</p>
-                        <ul>
-                            <li><code>condition</code> is an expression of type <code>boolean</code></li>
-                            <li><code>statement</code> is a single statement (also called the <strong>body</strong> of the loop)</li>
-                        </ul>
-                      </div>
-                    <div class="col-lg-1 col-sm-1"></div>
-                    <div class="col-lg-4 col-sm-6 "><img src="img/do.png" class="img-fluid rounded-1 shadow-lg" alt="Tutorial image"></div>
-                    <div class="col-lg-1 col-sm-1"></div>    
-                </div>
-              <br>
-                <div class="row">
-                    <div class="col-lg-2 col-sm-1"></div>
-                    <div class="col-lg-4 col-sm-6 "><img src="img/doexamp.png" class="img-fluid rounded-1 shadow-lg rounded-1 shadow-lg" alt="Tutorial image"></div>
-                    <div class="col-lg-1 col-sm-1"></div>
-                    <div class="col-lg-4 col-sm-6 rounded blueBox">
-                      <h2>do loop example</h2>
-                      <ul>
-                            <li>First, the statement is executed.</li>
-                            <li>Then, the condition is evaluated, and if it is true, the statement is executed again, continuing in this way until the condition becomes false.</li>
-                            <li>At this point the statement immediately following the do loop is executed.</li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-1 col-sm-1"></div>    
-                </div>
-                <br>
-                <div class="row">
-                    <div class="col-lg-1 col-sm-1"></div>
-                    <div class="col-lg-4 col-sm-6 rounded greyBox">
-                        <h2>nested loop</h2>
-                        <p>The body of a loop can contain itself a loop, called a <i>nested</i> loop. It is possible to nest an arbitrary number of loops.</p>
-                        <p>Note that we have used an integer constant <code>NMAX</code>, denoting the number of rows (and of columns) of the table. (The static keyword indicates that <code>NMAX</code> is not an instance variable, but a global variable for the class).</p>
-                      </div>
-                    <div class="col-lg-1 col-sm-1"></div>
-                    <div class="col-lg-4 col-sm-6 "><img src="img/nestedloop.png" class="img-fluid rounded-1 shadow-lg" alt="Tutorial image"></div>
-                    <div class="col-lg-1 col-sm-1"></div>    
-                </div>
-              <br>
-                <div class="row">
-                    <div class="col-lg-2 col-sm-1"></div>
-                    <div class="col-lg-4 col-sm-6 "><img src="img/nestedloopexamp.png" class="img-fluid rounded-1 shadow-lg rounded-1 shadow-lg" alt="Tutorial image"></div>
-                    <div class="col-lg-1 col-sm-1"></div>
-                    <div class="col-lg-4 col-sm-6 rounded blueBox">
-                       <h2>nested loop Example</h2> 
-                        <p>In the previous example, where we printed out the multiplication table, the number of iterations of the internal loop was fixed. In general, the number of iterations of an internal loop may depend on the iteration of the external loop.</p>
-                        <p><i>Printing a pyramid of stars</i> To print the generic row r: print (height - r) blanks and (2 x r - 1) stars.</p>
-                    </div>
-                    <div class="col-lg-1 col-sm-1"></div>    
-                </div>
+      <div class="row">
+        <div class="col-lg-1 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6 rounded greyBox">
+          <h2>For (each) Loops</h2>
+          <p>The <strong>foreach</strong> loop in C++ or more specifically,
+            <strong>range-based for loop</strong> was introduced with the <strong>C++11</strong>.
+            This type of for loop structure eases the traversal over an iterable data set.
+            It does this by eliminating the initialization process and traversing over each and every element rather
+            than
+            an iterator. So let us dig into the respective <strong>foreach</strong> loop structure.
+          </p>
+        </div>
+        <div class="col-lg-1 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6 "><img src="img/forloop.png" class="img-fluid rounded-1 shadow-lg"
+            alt="Tutorial image"></div>
+        <div class="col-lg-1 col-sm-1"></div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-lg-2 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6"><img src="img/arrays.png" class="img-fluid rounded-1 shadow-lg "
+            alt="Tutorial image"></div>
+        <div class="col-lg-1 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6 rounded blueBox">
+          <h2>Arrays</h2>
+          <p>In C++, an array is a variable that can store multiple values of the same type. For example,</p>
+          <p>Suppose a class has 27 students, and we need to store the grades of all of them. Instead of creating 27
+            separate variables, we can simply create an array:</p>
+          <p>Here, <code>grade</code> is an array that can hold a maximum of 27 elements of <code>double</code> type.
+          </p>
+          <p>In C++, the size and type of arrays cannot be changed after its declaration.</p>
+        </div>
+        <div class="col-lg-1 col-sm-1"></div>
+      </div>
 
-              
-              
-            </div>
+      <br>
+      <div class="row">
+        <div class="col-lg-1 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6 rounded greyBox">
+          <h2>Working of the foreach loop in C++</h2>
+          <p>So basically a <strong>for-each</strong> loop iterates over the elements of arrays, vectors, or any other
+            data sets. It assigns the value of the current element to the variable iterator declared inside the loop.
+            Let us take a closer look at the syntax:</p>
 
-            <br>
-
-            <div class="p-5 mb-4 rounded-3">
-                <div class="container-fluid py-5">
-                  <h1 class="display-5 fw-light text-light">Common Errors</h1>
-                  <p class="col-md-8 fs-4 text-light">Avoid common mistakes when using C++ loops and arrays.</p>
-
-                </div>
-            </div>
-            <div class="container-fluid">
-
-              <div class="row">
-                <div class="col-lg-1 col-sm-1"></div>
-                <div class="col-lg-4 col-sm-6 rounded greyBox">
-                    <h2>Initialize a variable</h2>
-                    <p><i>To forget to initialize a variable that is used in the condition of the loop.</i> Remember that the first time the condition is checked is before starting the execution of the body of the loop.</p>
-                </div>
-                <div class="col-lg-1 col-sm-1"></div>
-                <div class="col-lg-4 col-sm-6 "><img src="img/errorloop1.png" class="img-fluid rounded-1 shadow-lg" alt="Tutorial image"></div>
-                <div class="col-lg-1 col-sm-1"></div>    
-              </div>            
-              <br>
-              <div class="row">
-                <div class="col-lg-2 col-sm-1"></div>
-                <div class="col-lg-4 col-sm-6"><img src="img/errorloop2.png" class="img-fluid rounded-1 shadow-lg " alt="Tutorial image"></div>
-                <div class="col-lg-1 col-sm-1"></div>
-                <div class="col-lg-4 col-sm-6 rounded blueBox">
-                    <h2>Update a variable</h2>
-                   <p><i>To forget to update the variables appearing in the condition of the loop.</i> The loop will never terminate. The statement to read the next element to be processed is missing.</p> 
-                </div>
-                <div class="col-lg-1 col-sm-1"></div>    
-            </div>
-            
-              <br>
-                <div class="row">
-                    <div class="col-lg-1 col-sm-1"></div>
-                    <div class="col-lg-4 col-sm-6 rounded greyBox">
-                      <h2>Wrong iteration size</h2>
-                      <p><i>Be off by 1 in the number of iterations.</i> Typically this is due to a mismatch between the condition of the loop and the initialization of the variables used in the condition.</p>
-                      <p>To avoid such types of errors, it is often convenient to test the loop with simple (i.e., small) values for the variables. In the example above, if we check the loop by printing 1 star, instead of 10 (by substituting 10 with 1 in the condition of the loop), we immediately notice that the loop would print 2 stars, instead of 1.</p>
-                    </div>
-                    <div class="col-lg-1 col-sm-1"></div>
-                    <div class="col-lg-4 col-sm-6  "><img src="img/errorloop3.png" class="img-fluid rounded-1 shadow-lg" alt="Tutorial image"></div>
-                    <div class="col-lg-1 col-sm-1"></div>    
-                </div>
-              <br>
-                
-
-              
-              
-            </div>
-
-
-            
+          <p>As we can see:</p>
+          <ul>
+            <li>During the loop initialization, the <strong>elemental variable declaration</strong> is the part where we
+              need to declare the variable which will iterate over the array or vector. Here, the <code>type</code> is
+              the data type of the <strong>variable_name</strong></li>
+            <li><strong>array/vector name</strong> is the name of the respective data set over which the loop will
+              iterate,</li>
+            <li><strong>loop statements</strong> are the different operations which the user can choose to perform over
+              the corresponding elements with the use of the iterating variable.</li>
+          </ul>
+          <p><strong>Note:</strong> It is suggested to keep the data type of the variable the same as that of the array
+            or vector. If the data type is not the same, then the elements are going to be type-casted and then stored
+            into the variable.</p>
+        </div>
+        <div class="col-lg-1 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6  "><img src="img/for(each)loop.png" class="img-fluid rounded-1 shadow-lg"
+            alt="Tutorial image"></div>
+        <div class="col-lg-1 col-sm-1"></div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-lg-2 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6  "><img src="img/loopbreakdown.png" class="img-fluid rounded-1 shadow-lg"
+            alt="Tutorial image"></div>
+        <div class="col-lg-1 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6 rounded blueBox ">
+          <h2>Foreach loop breakdown</h2>
+          <p>Let's break down the code and look at it line-by-line:</p>
+          <ul>
+            <li>An array <code>arr[]</code> is initialized with some values <strong>{1 , 2 , 3 , 4 , 5}</strong></li>
+            <li>Inside the loop structure, <strong>'i'</strong> is the variable that stores the value of the current
+              array element</li>
+            <li><code>arr</code> is the array name which also serves as the base address of the respective array</li>
+            <li>As we can see, printing <strong>'i'</strong> for each iteration gives us the corresponding array
+              elements in contrast to the array indices in case of normal for loop</li>
+          </ul>
+          <p><strong>Please note</strong>: While declaring the variable '<strong>i</strong>' we could also use the
+            <code>auto</code> datatype instead of <code>int</code>.
+            This ensures that the type of the variable is deduced from the array type, and no data type conflicts occur.
+          </p>
+        </div>
+        <div class="col-lg-1 col-sm-1"></div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-lg-1 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6 rounded greyBox">
+          <h2>Vectors</h2>
+          <p>Vectors in C++ are sequence containers representing arrays that can change their size during runtime. They
+            use contiguous storage
+            locations for their elements just as efficiently as in arrays, which means that their elements can also be
+            accessed using offsets
+            on regular pointers to its elements.</p>
+          <p>Vectors are the dynamic arrays that are used to store data.It is different from arrays which store
+            sequential data and are static
+            in nature, Vectors provide more flexibility to the program. Vectors can adjust their size automatically
+            when an element is inserted or deleted from it.</p>
+        </div>
+        <div class="col-lg-1 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6 "><img src="img/vectorinit.png" class="img-fluid rounded-1 shadow-lg"
+            alt="Tutorial image"></div>
+        <div class="col-lg-1 col-sm-1"></div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-lg-2 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6 "><img src="img/vector.png"
+            class="img-fluid rounded-1 shadow-lg rounded-1 shadow-lg" alt="Tutorial image"></div>
+        <div class="col-lg-1 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6 rounded blueBox">
+          <h2>Example of foreach loop for Vectors in C++</h2>
+          <p>The following code illustrates the use of the <strong>for-each</strong> loop for iterating over a
+            <code>vector</code>.</p>
+          <p>The <strong>for-each</strong> loop for vector works in the same way as it does for an array. Furthermore,
+            the only differences are the vector declaration, initialization and the different operations that can be
+            performed over it.</p>
+        </div>
+        <div class="col-lg-1 col-sm-1"></div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-lg-1 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6 rounded greyBox">
+          <h2>while loops</h2>
+          <ul>
+            <li><code>condition</code> is an expression of type <code>boolean</code></li>
+            <li><code>statement</code> is a single statement (also called the <strong>body</strong> of the loop)</li>
+          </ul>
+          <p><strong>Note:</strong> since, by making use of a block, it is possible to group several statements into a
+            single composite statement, it is in fact possible to have more than one statement in the body of the loop.
+          </p>
+        </div>
+        <div class="col-lg-1 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6 "><img src="img/while.png" class="img-fluid rounded-1 shadow-lg"
+            alt="Tutorial image"></div>
+        <div class="col-lg-1 col-sm-1"></div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-lg-2 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6 "><img src="img/whileexamp.png"
+            class="img-fluid rounded-1 shadow-lg rounded-1 shadow-lg" alt="Tutorial image"></div>
+        <div class="col-lg-1 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6 rounded blueBox">
+          <h2>while loop example</h2>
+          <ul>
+            <li>First, the condition is evaluated.</li>
+            <li>If it is true, the statement is executed and the value of the condition is evaluated again, continuing
+              in this way until the condition becomes false.</li>
+            <li>At this point the statement immediately following the while loop is executed.</li>
+          </ul>
+          <p>Hence, the body of the loop is executed as long as the condition stays true. As soon as it becomes false we
+            exit the loop and continue with the following statement.</p>
+        </div>
+        <div class="col-lg-1 col-sm-1"></div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-lg-1 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6 rounded greyBox">
+          <h2>do loops</h2>
+          <p>In a while loop, the condition of end of loop is checked at the beginning of each iteration. A do loop is
+            similar to a while loop, with the only difference that the condition of end of loop is checked at the end of
+            each iteration.</p>
+          <ul>
+            <li><code>condition</code> is an expression of type <code>boolean</code></li>
+            <li><code>statement</code> is a single statement (also called the <strong>body</strong> of the loop)</li>
+          </ul>
+        </div>
+        <div class="col-lg-1 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6 "><img src="img/do.png" class="img-fluid rounded-1 shadow-lg"
+            alt="Tutorial image"></div>
+        <div class="col-lg-1 col-sm-1"></div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-lg-2 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6 "><img src="img/doexamp.png"
+            class="img-fluid rounded-1 shadow-lg rounded-1 shadow-lg" alt="Tutorial image"></div>
+        <div class="col-lg-1 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6 rounded blueBox">
+          <h2>do loop example</h2>
+          <ul>
+            <li>First, the statement is executed.</li>
+            <li>Then, the condition is evaluated, and if it is true, the statement is executed again, continuing in this
+              way until the condition becomes false.</li>
+            <li>At this point the statement immediately following the do loop is executed.</li>
+          </ul>
+        </div>
+        <div class="col-lg-1 col-sm-1"></div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-lg-1 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6 rounded greyBox">
+          <h2>nested loop</h2>
+          <p>The body of a loop can contain itself a loop, called a <i>nested</i> loop. It is possible to nest an
+            arbitrary number of loops.</p>
+          <p>Note that we have used an integer constant <code>NMAX</code>, denoting the number of rows (and of columns)
+            of the table. (The static keyword indicates that <code>NMAX</code> is not an instance variable, but a global
+            variable for the class).</p>
+        </div>
+        <div class="col-lg-1 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6 "><img src="img/nestedloop.png" class="img-fluid rounded-1 shadow-lg"
+            alt="Tutorial image"></div>
+        <div class="col-lg-1 col-sm-1"></div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-lg-2 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6 "><img src="img/nestedloopexamp.png"
+            class="img-fluid rounded-1 shadow-lg rounded-1 shadow-lg" alt="Tutorial image"></div>
+        <div class="col-lg-1 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6 rounded blueBox">
+          <h2>nested loop Example</h2>
+          <p>In the previous example, where we printed out the multiplication table, the number of iterations of the
+            internal loop was fixed. In general, the number of iterations of an internal loop may depend on the
+            iteration of the external loop.</p>
+          <p><i>Printing a pyramid of stars</i> To print the generic row r: print (height - r) blanks and (2 x r - 1)
+            stars.</p>
+        </div>
+        <div class="col-lg-1 col-sm-1"></div>
+      </div>
 
 
 
+    </div>
+
+    <br>
+
+    <div class="p-5 mb-4 rounded-3">
+      <div class="container-fluid py-5">
+        <h1 class="display-5 fw-light text-light">Common Errors</h1>
+        <p class="col-md-8 fs-4 text-light">Avoid common mistakes when using C++ loops and arrays.</p>
+
+      </div>
+    </div>
+    <div class="container-fluid">
+
+      <div class="row">
+        <div class="col-lg-1 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6 rounded greyBox">
+          <h2>Initialize a variable</h2>
+          <p><i>To forget to initialize a variable that is used in the condition of the loop.</i> Remember that the
+            first time the condition is checked is before starting the execution of the body of the loop.</p>
+        </div>
+        <div class="col-lg-1 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6 "><img src="img/errorloop1.png" class="img-fluid rounded-1 shadow-lg"
+            alt="Tutorial image"></div>
+        <div class="col-lg-1 col-sm-1"></div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-lg-2 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6"><img src="img/errorloop2.png" class="img-fluid rounded-1 shadow-lg "
+            alt="Tutorial image"></div>
+        <div class="col-lg-1 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6 rounded blueBox">
+          <h2>Update a variable</h2>
+          <p><i>To forget to update the variables appearing in the condition of the loop.</i> The loop will never
+            terminate. The statement to read the next element to be processed is missing.</p>
+        </div>
+        <div class="col-lg-1 col-sm-1"></div>
+      </div>
+
+      <br>
+      <div class="row">
+        <div class="col-lg-1 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6 rounded greyBox">
+          <h2>Wrong iteration size</h2>
+          <p><i>Be off by 1 in the number of iterations.</i> Typically this is due to a mismatch between the condition
+            of the loop and the initialization of the variables used in the condition.</p>
+          <p>To avoid such types of errors, it is often convenient to test the loop with simple (i.e., small) values for
+            the variables. In the example above, if we check the loop by printing 1 star, instead of 10 (by substituting
+            10 with 1 in the condition of the loop), we immediately notice that the loop would print 2 stars, instead of
+            1.</p>
+        </div>
+        <div class="col-lg-1 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6  "><img src="img/errorloop3.png" class="img-fluid rounded-1 shadow-lg"
+            alt="Tutorial image"></div>
+        <div class="col-lg-1 col-sm-1"></div>
+      </div>
+      <br>
 
 
-            <script src="js/bootstrap.bundle.min.js"></script>
-        </main>
-
-        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-0 border-top text-bg-dark">
-          <div class="col mb-3">
-            <a href = "index.html" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
-              <img class="bi me-2" width="100%" height="100%" role="img" aria-label="Logo" src="img/Logo.png"></img>
-            </a>
-            <p class="text-muted">&copy; 2022</p>
-          </div>
-
-          <div class="col mb-3">
-
-          </div>
-
-          <div class="col mb-3">
-            <h5>Navigate</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="tutorial.html" class="nav-link p-0 text-muted">Tutorials</a></li>
-              <li class="nav-item mb-2"><a href="search.php" class="nav-link p-0 text-muted">Search</a></li>
-              <li class="nav-item mb-2"><a href="help.html" class="nav-link p-0 text-muted">Help</a></li>
 
 
-            </ul>
-          </div>
-
-          <div class="col mb-3">
-            <h5>Policy</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Legal</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Privacy</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Cookies</a></li>
+    </div>
 
 
-            </ul>
-          </div>
-
-          <div class="col mb-3 ">
-            <h5>Socials</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Twitter</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Instagram</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Reddit</a></li>
 
 
-            </ul>
-          </div>
-    </footer>
 
-    </body>
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </main>
+
+  <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-0 border-top text-bg-dark">
+    <div class="col mb-3">
+      <a href="index.html" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+        <img class="bi me-2" width="100%" height="100%" role="img" aria-label="Logo" src="img/Logo.png"></img>
+      </a>
+      <p class="text-muted">&copy; 2022</p>
+    </div>
+
+    <div class="col mb-3">
+
+    </div>
+
+    <div class="col mb-3">
+      <h5>Navigate</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="tutorial.html" class="nav-link p-0 text-muted">Tutorials</a></li>
+        <li class="nav-item mb-2"><a href="search.php" class="nav-link p-0 text-muted">Search</a></li>
+        <li class="nav-item mb-2"><a href="help.html" class="nav-link p-0 text-muted">Help</a></li>
+
+
+      </ul>
+    </div>
+
+    <div class="col mb-3">
+      <h5>Policy</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Legal</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Privacy</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Cookies</a></li>
+
+
+      </ul>
+    </div>
+
+    <div class="col mb-3 ">
+      <h5>Socials</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Twitter</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Instagram</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Reddit</a></li>
+
+
+      </ul>
+    </div>
+  </footer>
+
+</body>
+
 </html>

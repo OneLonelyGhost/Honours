@@ -1,357 +1,459 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="landing page for honours project artifact">
-    <meta name="author" content="Charlie Mulholland | 1900313">
-    <title>De-DeBugger</title>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="landing page for honours project artifact">
+  <meta name="author" content="Charlie Mulholland | 1900313">
+  <title>De-DeBugger</title>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.bundle.min.js.map"></script>
-    <script type="text/javascript" src="js/other.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.bundle.min.js.map"></script>
+  <script type="text/javascript" src="js/other.js"></script>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <link href="css/headers.css" rel="stylesheet">
-    <link href="css/carousel.css" rel="stylesheet">
-    <link href="css/other.css" rel="stylesheet">
+  <link href="css/headers.css" rel="stylesheet">
+  <link href="css/carousel.css" rel="stylesheet">
+  <link href="css/other.css" rel="stylesheet">
 
 
 
-    </head>
-    <body id="tutorial" class ="tut">
-      <header>
-        <div class="px-3 py-2 text-bg-dark">
-          <div class="container">
-            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-              <a href = "index.html" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
-                <img class="bi me-2" width="50%" height="50%" src="img/Logo.png" ></img>
+</head>
+
+<body id="tutorial" class="tut">
+  <header>
+    <div class="px-3 py-2 text-bg-dark">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <a href="index.html"
+            class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+            <img class="bi me-2" width="50%" height="50%" src="img/Logo.png"></img>
+          </a>
+
+          <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+            <li>
+              <a href="index.html" class="nav-link text-white">
+                <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                  <use xlink:href="#home" />
+                </svg>
+                Home
               </a>
-
-              <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
-                <li>
-                  <a href="index.html" class="nav-link text-white">
-                    <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#home"/></svg>
-                    Home
-                  </a>
-                </li>
-                <li>
-                  <a href="search.php" class="nav-link text-white">
-                    <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#speedometer2"/></svg>
-                    Search
-                  </a>
-                </li>
-                <li>
-                  <a href="tutorial.html" class="nav-link text-secondary">
-                    <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#table"/></svg>
-                    Tutorials
-                  </a>
-                </li>
-                <li>
-                  <a href="help.html" class="nav-link text-white">
-                    <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#grid"/></svg>
-                    Help
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
+            </li>
+            <li>
+              <a href="search.php" class="nav-link text-white">
+                <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                  <use xlink:href="#speedometer2" />
+                </svg>
+                Search
+              </a>
+            </li>
+            <li>
+              <a href="tutorial.html" class="nav-link text-secondary">
+                <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                  <use xlink:href="#table" />
+                </svg>
+                Tutorials
+              </a>
+            </li>
+            <li>
+              <a href="help.html" class="nav-link text-white">
+                <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                  <use xlink:href="#grid" />
+                </svg>
+                Help
+              </a>
+            </li>
+          </ul>
         </div>
-        </header>
+      </div>
+    </div>
+  </header>
 
-        <main class="my-5 py-2">
+  <main class="my-5 py-2">
 
-            <div class="p-5 mb-4 rounded-3">
-                <div class="container-fluid py-5">
-                <img class="bd-placeholder-img-lg" height="100%" width="100%" src="img/TutorialLong.png"></img>
-                  <h1 class="display-5 fw-light text-light">C++ Solutions.</h1>
-                  <p class="col-md-8 fs-4 text-light">Explore the power of object-oriented programming with our easy-to-understand guide on C++ classes and objects. </p>
+    <div class="p-5 mb-4 rounded-3">
+      <div class="container-fluid py-5">
+        <img class="bd-placeholder-img-lg" height="100%" width="100%" src="img/TutorialLong.png"></img>
+        <h1 class="display-5 fw-light text-light">C++ Solutions.</h1>
+        <p class="col-md-8 fs-4 text-light">Explore the power of object-oriented programming with our easy-to-understand
+          guide on C++ classes and objects. </p>
 
-                </div>
-            </div>
-            <div class="container-fluid">
+      </div>
+    </div>
+    <div class="container-fluid">
 
-              <div class="row">
-                <div class="col-lg-1 col-sm-1"></div>
-                <div class="col-lg-4 col-sm-6 rounded greyBox">
-                  <h2>Why do we need Object Orientatted Programming (OOP)?</h2>
-                  <p>OOP helps to keep the C++ code DRY "Don't Repeat Yourself", and makes the code easier to maintain, modify and debug. OOP makes it possible to create full reusable applications with less code and shorter development time.</p>
-                </div>
-                <div class="col-lg-1 col-sm-1"></div>
-                <div class="col-lg-4 col-sm-6 "><img src="img/OOP_need.png" class="img-fluid rounded-1 shadow-lg" alt="Tutorial image"></div>
-                <div class="col-lg-1 col-sm-1"></div>    
-              </div>            
-              <br>
-              <div class="row">
-                <div class="col-lg-2 col-sm-1"></div>
-                <div class="col-lg-4 col-sm-6"><img src="img/" class="img-fluid rounded-1 shadow-lg " alt="Tutorial image"></div>
-                <div class="col-lg-1 col-sm-1"></div>
-                <div class="col-lg-4 col-sm-6 rounded blueBox">
-                  <h2>Objects</h2>
-                  <p>In C++, an <strong>object</strong> is an instance of a class that encapsulates data and functionality pertaining to that data.</p>
-                  <p>Suppose a class named <code>MyClass</code> was created, so now it can be used to create objects.</p>
-                  <p>To create an object of <code>MyClass</code>, specify the class name, followed by the object name.</p>
-                </div>
-                <div class="col-lg-1 col-sm-1"></div>    
-            </div>
-            
-              <br>
-                <div class="row">
-                    <div class="col-lg-1 col-sm-1"></div>
-                    <div class="col-lg-4 col-sm-6 rounded greyBox">
-                      <h2>Classes</h2>
-                        <p>In C++, a <strong>class</strong> is a user-defined data type that encapsulates information and behavior about an object. It serves as a blueprint for future inherited classes.</p>
-                        <p>A class consists of data members (attributes) and member functions (methods). The data members represent the state of an object, while the member functions represent its behavior.</p>
-                        <p>In the above example, we defined a class called <code>MyClass</code> with two data members (<code>myInt</code> and <code>myString</code>) and one member function (<code>printMessage()</code>). We can create objects of this class and use its member functions to perform actions and access its data members to retrieve its state.</p>
-                    </div>
-                    <div class="col-lg-1 col-sm-1"></div>
-                    <div class="col-lg-4 col-sm-6  "><img src="img/class.png" class="img-fluid rounded-1 shadow-lg" alt="Tutorial image"></div>
-                    <div class="col-lg-1 col-sm-1"></div>    
-                </div>
-              <br>
-                <div class="row">
-                    <div class="col-lg-2 col-sm-1"></div>
-                    <div class="col-lg-4 col-sm-6  "><img src="img/members.png" class="img-fluid rounded-1 shadow-lg" alt="Tutorial image"></div>
-                    <div class="col-lg-1 col-sm-1"></div>
-                    <div class="col-lg-4 col-sm-6 rounded blueBox ">
-                      <h2>Class Members</h2>
+      <div class="row">
+        <div class="col-lg-1 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6 rounded greyBox">
+          <h2>Why do we need Object Orientatted Programming (OOP)?</h2>
+          <p>OOP helps to keep the C++ code DRY "Don't Repeat Yourself", and makes the code easier to maintain, modify
+            and debug. OOP makes it possible to create full reusable applications with less code and shorter development
+            time.</p>
+        </div>
+        <div class="col-lg-1 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6 "><img src="img/OOP_need.png" class="img-fluid rounded-1 shadow-lg"
+            alt="Tutorial image"></div>
+        <div class="col-lg-1 col-sm-1"></div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-lg-2 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6"><img src="img/" class="img-fluid rounded-1 shadow-lg " alt="Tutorial image">
+        </div>
+        <div class="col-lg-1 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6 rounded blueBox">
+          <h2>Objects</h2>
+          <p>In C++, an <strong>object</strong> is an instance of a class that encapsulates data and functionality
+            pertaining to that data.</p>
+          <p>Suppose a class named <code>MyClass</code> was created, so now it can be used to create objects.</p>
+          <p>To create an object of <code>MyClass</code>, specify the class name, followed by the object name.</p>
+        </div>
+        <div class="col-lg-1 col-sm-1"></div>
+      </div>
 
-                     <p>A class is comprised of class members:</p>
-                      <ul>
-                      <li> Attributes, also known as member data, consist of information about an instance of the class.</li>
-                      <li> Methods, also known as member functions, are functions that can be used with an instance of the class. </li>
-                    </ul>
-                    </div>
-                    <div class="col-lg-1 col-sm-1"></div>    
-                </div>
-              <br>
-                <div class="row">
-                    <div class="col-lg-1 col-sm-1"></div>
-                    <div class="col-lg-4 col-sm-6 rounded greyBox">    
-                    <h2>Attributes</h2>
-                      <p>To access the class attributes, use the dot syntax (<code>.</code>) on the object:</p>
-                      <p>In the example, we defined a class called `MyClass` with two attributes, an integer called `myInt` and a string called `myString`. We then created an object called `myObj` and set its attributes using the dot syntax.</p>  
-                    </div>
-                    <div class="col-lg-1 col-sm-1"></div>
-                    <div class="col-lg-4 col-sm-6 "><img src="img/Attributes.png" class="img-fluid rounded-1 shadow-lg" alt="Tutorial image"></div>
-                    <div class="col-lg-1 col-sm-1"></div>    
-                </div>
-              <br>
-                <div class="row">
-                    <div class="col-lg-2 col-sm-1"></div>
-                    <div class="col-lg-4 col-sm-6 "><img src="img/accesscont.png" class="img-fluid rounded-1 shadow-lg rounded-1 shadow-lg" alt="Tutorial image"></div>
-                    <div class="col-lg-1 col-sm-1"></div>
-                    <div class="col-lg-4 col-sm-6 rounded blueBox">
-                      <h2>Access Control Operators</h2>
+      <br>
+      <div class="row">
+        <div class="col-lg-1 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6 rounded greyBox">
+          <h2>Classes</h2>
+          <p>In C++, a <strong>class</strong> is a user-defined data type that encapsulates information and behavior
+            about an object. It serves as a blueprint for future inherited classes.</p>
+          <p>A class consists of data members (attributes) and member functions (methods). The data members represent
+            the state of an object, while the member functions represent its behavior.</p>
+          <p>In the above example, we defined a class called <code>MyClass</code> with two data members
+            (<code>myInt</code> and <code>myString</code>) and one member function (<code>printMessage()</code>). We can
+            create objects of this class and use its member functions to perform actions and access its data members to
+            retrieve its state.</p>
+        </div>
+        <div class="col-lg-1 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6  "><img src="img/class.png" class="img-fluid rounded-1 shadow-lg"
+            alt="Tutorial image"></div>
+        <div class="col-lg-1 col-sm-1"></div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-lg-2 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6  "><img src="img/members.png" class="img-fluid rounded-1 shadow-lg"
+            alt="Tutorial image"></div>
+        <div class="col-lg-1 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6 rounded blueBox ">
+          <h2>Class Members</h2>
 
-                      <p>C++ classes have access control operators that designate the scope of class members:</p>
-                      <ul>
-                      <li> `public` members are accessible everywhere.</li>
-                      <li> `private` members can only be accessed from within the same instance of the class or from friends classes.</li>
-                      </ul>
-                    </div>
-                    <div class="col-lg-1 col-sm-1"></div>    
-                </div>
-                <br>
-                <div class="row">
-                  <div class="col-lg-1 col-sm-1"></div>
-                  <div class="col-lg-4 col-sm-6 rounded greyBox">    
-                  <h2>Polymorphism</h2>
-                  <p><strong>Polymorphism</strong> is an important concept in object-oriented programming. It means "more than one form" — the same entity (function or operator) can operate differently under different situations.</p>
+          <p>A class is comprised of class members:</p>
+          <ul>
+            <li> Attributes, also known as member data, consist of information about an instance of the class.</li>
+            <li> Methods, also known as member functions, are functions that can be used with an instance of the class.
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-1 col-sm-1"></div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-lg-1 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6 rounded greyBox">
+          <h2>Attributes</h2>
+          <p>To access the class attributes, use the dot syntax (<code>.</code>) on the object:</p>
+          <p>In the example, we defined a class called `MyClass` with two attributes, an integer called `myInt` and a
+            string called `myString`. We then created an object called `myObj` and set its attributes using the dot
+            syntax.</p>
+        </div>
+        <div class="col-lg-1 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6 "><img src="img/Attributes.png" class="img-fluid rounded-1 shadow-lg"
+            alt="Tutorial image"></div>
+        <div class="col-lg-1 col-sm-1"></div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-lg-2 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6 "><img src="img/accesscont.png"
+            class="img-fluid rounded-1 shadow-lg rounded-1 shadow-lg" alt="Tutorial image"></div>
+        <div class="col-lg-1 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6 rounded blueBox">
+          <h2>Access Control Operators</h2>
 
-                  <p>There are two types of polymorphism in C++:</p>
-                  
-                  <li> Compile-time polymorphism: This is also called static (or early) binding.</li>
-                  <li> Runtime polymorphism: This is also called dynamic (or late) binding.</li>
-                  </div>
-                  <div class="col-lg-1 col-sm-1"></div>
-                  <div class="col-lg-4 col-sm-6 "><img src="img/polymorphism_examp.png" class="img-fluid rounded-1 shadow-lg" alt="Tutorial image"></div>
-                  <div class="col-lg-1 col-sm-1"></div>    
-              </div>
-            <br>
-              <div class="row">
-                  <div class="col-lg-2 col-sm-1"></div>
-                  <div class="col-lg-4 col-sm-6 "><img src="img/Compile-time.png" class="img-fluid rounded-1 shadow-lg rounded-1 shadow-lg" alt="Tutorial image"></div>
-                  <div class="col-lg-1 col-sm-1"></div>
-                  <div class="col-lg-4 col-sm-6 rounded blueBox">
-                    <h2>Compile-time Polymorphism</h2>
+          <p>C++ classes have access control operators that designate the scope of class members:</p>
+          <ul>
+            <li> `public` members are accessible everywhere.</li>
+            <li> `private` members can only be accessed from within the same instance of the class or from friends
+              classes.</li>
+          </ul>
+        </div>
+        <div class="col-lg-1 col-sm-1"></div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-lg-1 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6 rounded greyBox">
+          <h2>Polymorphism</h2>
+          <p><strong>Polymorphism</strong> is an important concept in object-oriented programming. It means "more than
+            one form" — the same entity (function or operator) can operate differently under different situations.</p>
 
-                    <p>Compile-time polymorphism is perfect for function overloading as well as operator overloading.</p>
-                    <p>In the example, there are two functions with the same name, `sum()`, but a different number of arguments.</p>
-                    <p>The number of parameters passed during function invocation (function calling) determines which function to be called. This is why it is considered as an example of polymorphism because the output is different in different conditions. Since the call is determined during compile time, it is called compile-time polymorphism.</p>
-                  </div>
-                  <div class="col-lg-1 col-sm-1"></div>    
-              </div>
-              <br>
-              <div class="row">
-                <div class="col-lg-1 col-sm-1"></div>
-                <div class="col-lg-4 col-sm-6 rounded greyBox">    
-                <h2>Runtime Polymorphism</h2>
-                <p>Function overriding is an example of runtime polymorphism.
-                </p>
+          <p>There are two types of polymorphism in C++:</p>
 
-                <p>When a child class declares a method that is already present in the parent class, it is called function overriding because the child class overrides the parent class.
-                </p>
+          <li> Compile-time polymorphism: This is also called static (or early) binding.</li>
+          <li> Runtime polymorphism: This is also called dynamic (or late) binding.</li>
+        </div>
+        <div class="col-lg-1 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6 "><img src="img/polymorphism_examp.png" class="img-fluid rounded-1 shadow-lg"
+            alt="Tutorial image"></div>
+        <div class="col-lg-1 col-sm-1"></div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-lg-2 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6 "><img src="img/Compile-time.png"
+            class="img-fluid rounded-1 shadow-lg rounded-1 shadow-lg" alt="Tutorial image"></div>
+        <div class="col-lg-1 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6 rounded blueBox">
+          <h2>Compile-time Polymorphism</h2>
 
-                <p>In the case of function overriding, there are two definitions of the same function, one in the parent class and one in the child class. Since the call to the function is determined at runtime to decide which definition of the function is to be called, it is called runtime polymorphism.
-                </p>
-                </div>
-                <div class="col-lg-1 col-sm-1"></div>
-                <div class="col-lg-4 col-sm-6 "><img src="img/Runtime.png" class="img-fluid rounded-1 shadow-lg" alt="Tutorial image"></div>
-                <div class="col-lg-1 col-sm-1"></div>    
-            </div>
-            <br>
-            <div class="row">
-              <div class="col-lg-2 col-sm-1"></div>
-              <div class="col-lg-4 col-sm-6 "><img src="img/polymorphism_need.png" class="img-fluid rounded-1 shadow-lg rounded-1 shadow-lg" alt="Tutorial image"></div>
-              <div class="col-lg-1 col-sm-1"></div>
-              <div class="col-lg-4 col-sm-6 rounded blueBox">
-                <h2>Why do we need Polymorphism?</h2>
+          <p>Compile-time polymorphism is perfect for function overloading as well as operator overloading.</p>
+          <p>In the example, there are two functions with the same name, `sum()`, but a different number of arguments.
+          </p>
+          <p>The number of parameters passed during function invocation (function calling) determines which function to
+            be called. This is why it is considered as an example of polymorphism because the output is different in
+            different conditions. Since the call is determined during compile time, it is called compile-time
+            polymorphism.</p>
+        </div>
+        <div class="col-lg-1 col-sm-1"></div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-lg-1 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6 rounded greyBox">
+          <h2>Runtime Polymorphism</h2>
+          <p>Function overriding is an example of runtime polymorphism.
+          </p>
 
-                <p>Polymorphism in C++ allows us to reuse code by creating one function that's usable for multiple uses. We can also make operators polymorphic and use them to add not only numbers but also combine strings. This saves time and allows for a more streamlined program.</p>
-              </div>
-              <div class="col-lg-1 col-sm-1"></div>    
-          </div>
+          <p>When a child class declares a method that is already present in the parent class, it is called function
+            overriding because the child class overrides the parent class.
+          </p>
 
-              
-              
-            </div>
+          <p>In the case of function overriding, there are two definitions of the same function, one in the parent class
+            and one in the child class. Since the call to the function is determined at runtime to decide which
+            definition of the function is to be called, it is called runtime polymorphism.
+          </p>
+        </div>
+        <div class="col-lg-1 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6 "><img src="img/Runtime.png" class="img-fluid rounded-1 shadow-lg"
+            alt="Tutorial image"></div>
+        <div class="col-lg-1 col-sm-1"></div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-lg-2 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6 "><img src="img/polymorphism_need.png"
+            class="img-fluid rounded-1 shadow-lg rounded-1 shadow-lg" alt="Tutorial image"></div>
+        <div class="col-lg-1 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6 rounded blueBox">
+          <h2>Why do we need Polymorphism?</h2>
 
-            <br>
-
-            <div class="p-5 mb-4 rounded-3">
-                <div class="container-fluid py-5">
-                  <h1 class="display-5 fw-light text-light">Common Errors</h1>
-                  <p class="col-md-8 fs-4 text-light">Minimize errors in your C++ code by avoiding common mistakes when working with objects and classes</p>
-
-                </div>
-            </div>
-            <div class="container-fluid">
-
-              <div class="row">
-                <div class="col-lg-1 col-sm-1"></div>
-                <div class="col-lg-4 col-sm-6 rounded greyBox">
-                    
-                </div>
-                <div class="col-lg-1 col-sm-1"></div>
-                <div class="col-lg-4 col-sm-6 "><img src="img/" class="img-fluid rounded-1 shadow-lg" alt="Tutorial image"></div>
-                <div class="col-lg-1 col-sm-1"></div>    
-              </div>            
-              <br>
-              <div class="row">
-                <div class="col-lg-2 col-sm-1"></div>
-                <div class="col-lg-4 col-sm-6"><img src="img/" class="img-fluid rounded-1 shadow-lg " alt="Tutorial image"></div>
-                <div class="col-lg-1 col-sm-1"></div>
-                <div class="col-lg-4 col-sm-6 rounded blueBox">
-                    
-                </div>
-                <div class="col-lg-1 col-sm-1"></div>    
-            </div>
-            
-              <br>
-                <div class="row">
-                    <div class="col-lg-1 col-sm-1"></div>
-                    <div class="col-lg-4 col-sm-6 rounded greyBox">
-                        
-                    </div>
-                    <div class="col-lg-1 col-sm-1"></div>
-                    <div class="col-lg-4 col-sm-6  "><img src="img/" class="img-fluid rounded-1 shadow-lg" alt="Tutorial image"></div>
-                    <div class="col-lg-1 col-sm-1"></div>    
-                </div>
-              <br>
-                <div class="row">
-                    <div class="col-lg-2 col-sm-1"></div>
-                    <div class="col-lg-4 col-sm-6  "><img src="img/" class="img-fluid rounded-1 shadow-lg" alt="Tutorial image"></div>
-                    <div class="col-lg-1 col-sm-1"></div>
-                    <div class="col-lg-4 col-sm-6 rounded blueBox ">
-                        
-                    </div>
-                    <div class="col-lg-1 col-sm-1"></div>    
-                </div>
-              <br>
-                <div class="row">
-                    <div class="col-lg-1 col-sm-1"></div>
-                    <div class="col-lg-4 col-sm-6 rounded greyBox">
-                        
-                      </div>
-                    <div class="col-lg-1 col-sm-1"></div>
-                    <div class="col-lg-4 col-sm-6 "><img src="img/" class="img-fluid rounded-1 shadow-lg" alt="Tutorial image"></div>
-                    <div class="col-lg-1 col-sm-1"></div>    
-                </div>
-              <br>
-                <div class="row">
-                    <div class="col-lg-2 col-sm-1"></div>
-                    <div class="col-lg-4 col-sm-6 "><img src="img/" class="img-fluid rounded-1 shadow-lg rounded-1 shadow-lg" alt="Tutorial image"></div>
-                    <div class="col-lg-1 col-sm-1"></div>
-                    <div class="col-lg-4 col-sm-6 rounded blueBox">
-                        
-
-                    </div>
-                    <div class="col-lg-1 col-sm-1"></div>    
-                </div>
-
-              
-              
-            </div>
-
-
-            
+          <p>Polymorphism in C++ allows us to reuse code by creating one function that's usable for multiple uses. We
+            can also make operators polymorphic and use them to add not only numbers but also combine strings. This
+            saves time and allows for a more streamlined program.</p>
+        </div>
+        <div class="col-lg-1 col-sm-1"></div>
+      </div>
 
 
 
+    </div>
+
+    <br>
+
+    <div class="p-5 mb-4 rounded-3">
+      <div class="container-fluid py-5">
+        <h1 class="display-5 fw-light text-light">Common Errors</h1>
+        <p class="col-md-8 fs-4 text-light">Minimize errors in your C++ code by avoiding common mistakes when working
+          with objects and classes</p>
+      </div>
+    </div>
+    <div class="container-fluid">
+
+      <div class="row">
+        <div class="col-lg-1 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6 rounded greyBox">
+          <h2>Returning a Local Object by Reference</h2>
+          <p>Look at the following code where a programmer wanted to do
+            some kind of optimization by avoiding unnecessary copying:</p>
+          <p>The object “sum” will now point to the local object “result”. But where is the object “result”
+            located after the SumComplex function is executed? Nowhere. It was located on the stack, but
+            after the function returned the stack was unwrapped and all local objects from the function were
+            destructed. This will eventually result in an undefined behaviour, even for primitive types. To
+            avoid performance issues, sometimes it is possible to use return value optimization:</p>
+        </div>
+        <div class="col-lg-1 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6 "><img src="img/byrefopt.png" class="img-fluid rounded-1 shadow-lg"
+            alt="Tutorial image">
+        </div>
+        <div class="col-lg-1 col-sm-1"></div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-lg-2 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6"><img src="img/objbyval.png" class="img-fluid rounded-1 shadow-lg "
+            alt="Tutorial image">
+        </div>
+        <div class="col-lg-1 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6 rounded blueBox">
+          <h2>Passing objects by value in C++</h2>
+          <p>Passing objects by value in C++ can be problematic for several reasons:
+          </p>
+          <ul>
+            <li>Performance: Passing objects by value involves making a copy of the object, which can be time-consuming
+              and
+              memory-intensive, especially for large objects. This can result in slower code and higher memory usage.
+            </li>
+            <li>Object slicing: When passing an object of a derived class by value as a parameter to a function that
+              expects an
+              object of its base class, only the base-class portion of the object is passed. This is called object
+              slicing, and it
+              can lead to unexpected behavior and errors.</li>
+            <li>Object ownership: If the object being passed is owned by the caller of the function, passing it by value
+              may
+              result in a copy being made and unnecessary memory usage. If the object is owned by the called function,
+              passing it
+              by value may result in a copy being made and the original object being left unchanged.</li>
+            <li>Object state: If the object being passed has mutable state, passing it by value may result in unintended
+              changes
+              to the original object, as the copy made by the function may be modified independently.</li>
+          </ul>
+          <p>To avoid these problems, it is often better to pass objects by reference or pointer instead of by value,
+            depending on
+            the situation. This avoids unnecessary copies and allows the function to operate on the original object
+            without
+            modifying it.</p>
+        </div>
+        <div class="col-lg-1 col-sm-1"></div>
+      </div>
+
+      <br>
+      <div class="row">
+        <div class="col-lg-1 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6 rounded greyBox">
+          <h2>Memory leaks</h2>
+          <p>Memory leaks occur when dynamically allocated memory is not properly released when it is no longer needed.
+            This can happen with objects if the programmer forgets to call the destructor or delete the object when it
+            is no longer needed.</p>
+        </div>
+        <div class="col-lg-1 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6  "><img src="img/memoryleak.png" class="img-fluid rounded-1 shadow-lg"
+            alt="Tutorial image">
+        </div>
+        <div class="col-lg-1 col-sm-1"></div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-lg-2 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6  "><img src="img/nulpoint.png" class="img-fluid rounded-1 shadow-lg"
+            alt="Tutorial image">
+        </div>
+        <div class="col-lg-1 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6 rounded blueBox ">
+          <h2>Null pointer errors</h2>
+          <p>Null pointer errors occur when a program attempts to access a pointer that is null or uninitialized. This
+            can happen with objects if the programmer forgets to initialize a pointer variable or does not check for
+            null pointers before accessing them.</p>
+        </div>
+        <div class="col-lg-1 col-sm-1"></div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-lg-1 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6 rounded greyBox">
+          <h2>Access violations</h2>
+          <p>Access violations occur when a program attempts to access memory that it does not have permission to
+            access. This can happen with objects if the programmer accesses private or protected members of a class from
+            outside the class, or if the program uses an object after it has been destroyed.</p>
+        </div>
+        <div class="col-lg-1 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6 "><img src="img/accessvio.png" class="img-fluid rounded-1 shadow-lg"
+            alt="Tutorial image">
+        </div>
+        <div class="col-lg-1 col-sm-1"></div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-lg-2 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6 "><img src="img/objslice.png"
+            class="img-fluid rounded-1 shadow-lg rounded-1 shadow-lg" alt="Tutorial image"></div>
+        <div class="col-lg-1 col-sm-1"></div>
+        <div class="col-lg-4 col-sm-6 rounded blueBox">
+          <h2>Object slicing</h2>
+          <p>Object slicing occurs when a derived class object is assigned to a base class object, resulting in the loss
+            of the derived class's additional data members and member functions. This can happen when objects are passed
+            by value or assigned to variables of a different type.</p>
+        </div>
+        <div class="col-lg-1 col-sm-1"></div>
+      </div>
 
 
-            <script src="js/bootstrap.bundle.min.js"></script>
-        </main>
 
-        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-0 border-top text-bg-dark">
-          <div class="col mb-3">
-            <a href = "index.html" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
-              <img class="bi me-2" width="100%" height="100%" role="img" aria-label="Logo" src="img/Logo.png"></img>
-            </a>
-            <p class="text-muted">&copy; 2022</p>
-          </div>
-
-          <div class="col mb-3">
-
-          </div>
-
-          <div class="col mb-3">
-            <h5>Navigate</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="tutorial.html" class="nav-link p-0 text-muted">Tutorials</a></li>
-              <li class="nav-item mb-2"><a href="search.php" class="nav-link p-0 text-muted">Search</a></li>
-              <li class="nav-item mb-2"><a href="help.html" class="nav-link p-0 text-muted">Help</a></li>
+    </div>
 
 
-            </ul>
-          </div>
-
-          <div class="col mb-3">
-            <h5>Policy</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Legal</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Privacy</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Cookies</a></li>
 
 
-            </ul>
-          </div>
-
-          <div class="col mb-3 ">
-            <h5>Socials</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Twitter</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Instagram</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Reddit</a></li>
 
 
-            </ul>
-          </div>
-    </footer>
 
-    </body>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </main>
+
+  <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-0 border-top text-bg-dark">
+    <div class="col mb-3">
+      <a href="index.html" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+        <img class="bi me-2" width="100%" height="100%" role="img" aria-label="Logo" src="img/Logo.png"></img>
+      </a>
+      <p class="text-muted">&copy; 2022</p>
+    </div>
+
+    <div class="col mb-3">
+
+    </div>
+
+    <div class="col mb-3">
+      <h5>Navigate</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="tutorial.html" class="nav-link p-0 text-muted">Tutorials</a></li>
+        <li class="nav-item mb-2"><a href="search.php" class="nav-link p-0 text-muted">Search</a></li>
+        <li class="nav-item mb-2"><a href="help.html" class="nav-link p-0 text-muted">Help</a></li>
+
+
+      </ul>
+    </div>
+
+    <div class="col mb-3">
+      <h5>Policy</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Legal</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Privacy</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Cookies</a></li>
+
+
+      </ul>
+    </div>
+
+    <div class="col mb-3 ">
+      <h5>Socials</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Twitter</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Instagram</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Reddit</a></li>
+
+
+      </ul>
+    </div>
+  </footer>
+
+</body>
+
 </html>
