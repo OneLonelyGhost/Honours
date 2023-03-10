@@ -91,23 +91,25 @@
       <div class="row">
         <div class="col-lg-1 col-sm-1"></div>
         <div class="col-lg-4 col-sm-6 rounded greyBox">
-          <h2></h2>
-          <p></p>
+          <h2>Pointers</h2>
+          <p>A <strong>pointer</strong> is a special type of variable that stores the address of another variable in it.
+          </p>
         </div>
         <div class="col-lg-1 col-sm-1"></div>
-        <div class="col-lg-4 col-sm-6 "><img src="img/" class="img-fluid rounded-1 shadow-lg" alt="Tutorial image">
+        <div class="col-lg-4 col-sm-6 "><img src="img/whatthepointer.png" class="img-fluid rounded-1 shadow-lg" alt="Tutorial image">
         </div>
         <div class="col-lg-1 col-sm-1"></div>
       </div>
       <br>
       <div class="row">
         <div class="col-lg-2 col-sm-1"></div>
-        <div class="col-lg-4 col-sm-6"><img src="img/" class="img-fluid rounded-1 shadow-lg " alt="Tutorial image">
+        <div class="col-lg-4 col-sm-6"><img src="img/pointexamp.png" class="img-fluid rounded-1 shadow-lg " alt="Tutorial image">
         </div>
         <div class="col-lg-1 col-sm-1"></div>
         <div class="col-lg-4 col-sm-6 rounded blueBox">
-          <h2></h2>
-          <p></p>
+          <h2>Declaration and Initialization of Pointer variable</h2>
+          <p>A pointer variable points to the same data type and is created with the <code>*</code> operator. Then the
+            address of another variable is stored in it.</p>
         </div>
         <div class="col-lg-1 col-sm-1"></div>
       </div>
@@ -116,23 +118,32 @@
       <div class="row">
         <div class="col-lg-1 col-sm-1"></div>
         <div class="col-lg-4 col-sm-6 rounded greyBox">
-          <h2></h2>
-          <p></p>
+          <h2>Pointer Dereferencing</h2>
+          <p>Dereferencing a pointer means getting the value that a pointer variable is pointing at.</p>
+          <p>The dereference operator <code>*</code> is used to get the value stored in the memory location pointed by
+            the pointer:</p>
         </div>
         <div class="col-lg-1 col-sm-1"></div>
-        <div class="col-lg-4 col-sm-6  "><img src="img/" class="img-fluid rounded-1 shadow-lg" alt="Tutorial image">
+        <div class="col-lg-4 col-sm-6  "><img src="img/pointder.png" class="img-fluid rounded-1 shadow-lg" alt="Tutorial image">
         </div>
         <div class="col-lg-1 col-sm-1"></div>
       </div>
       <br>
       <div class="row">
         <div class="col-lg-2 col-sm-1"></div>
-        <div class="col-lg-4 col-sm-6  "><img src="img/" class="img-fluid rounded-1 shadow-lg" alt="Tutorial image">
+        <div class="col-lg-4 col-sm-6  "><img src="img/refsyntax.png" class="img-fluid rounded-1 shadow-lg" alt="Tutorial image">
         </div>
         <div class="col-lg-1 col-sm-1"></div>
         <div class="col-lg-4 col-sm-6 rounded blueBox ">
-          <h2></h2>
-          <p></p>
+          <h2>References</h2>
+          <p>A <strong>reference</strong> variable is an alias for another object. It is created using the
+            <code>&amp;</code> sign.
+          </p>
+          <p>Two things to note:</p>
+          <ul>
+            <li>Anything done to the reference also happens to the original.</li>
+            <li>Aliases cannot be changed to alias something else.</li>
+          </ul>
         </div>
         <div class="col-lg-1 col-sm-1"></div>
       </div>
@@ -140,22 +151,30 @@
       <div class="row">
         <div class="col-lg-1 col-sm-1"></div>
         <div class="col-lg-4 col-sm-6 rounded greyBox">
-
+          <h2>Pass-By-Reference</h2>
+          <p>In C++, pass-by-reference refers to passing parameters to a function by using references.</p>
+          <p>It allows the ability to:</p>
+          <ul>
+            <li>Modify the value of the function arguments.</li>
+            <li>Avoid making copies of a variable/object for performance reasons.</li>
+          </ul>
         </div>
         <div class="col-lg-1 col-sm-1"></div>
-        <div class="col-lg-4 col-sm-6 "><img src="img/" class="img-fluid rounded-1 shadow-lg" alt="Tutorial image">
+        <div class="col-lg-4 col-sm-6 "><img src="img/passbyref.png" class="img-fluid rounded-1 shadow-lg" alt="Tutorial image">
         </div>
         <div class="col-lg-1 col-sm-1"></div>
       </div>
       <br>
       <div class="row">
         <div class="col-lg-2 col-sm-1"></div>
-        <div class="col-lg-4 col-sm-6 "><img src="img/" class="img-fluid rounded-1 shadow-lg rounded-1 shadow-lg"
+        <div class="col-lg-4 col-sm-6 "><img src="img/constref.png" class="img-fluid rounded-1 shadow-lg rounded-1 shadow-lg"
             alt="Tutorial image"></div>
         <div class="col-lg-1 col-sm-1"></div>
         <div class="col-lg-4 col-sm-6 rounded blueBox">
-          <h2></h2>
-          <p></p>
+          <h2><code>const</code> Reference</h2>
+          <p>In C++, pass-by-reference with <code>const</code> can be used for a function where the parameter(s) won’t
+            change inside the function.</p>
+          <p>This saves the computational cost of making a copy of the argument.</p>
         </div>
         <div class="col-lg-1 col-sm-1"></div>
       </div>
@@ -178,23 +197,28 @@
       <div class="row">
         <div class="col-lg-1 col-sm-1"></div>
         <div class="col-lg-4 col-sm-6 rounded greyBox">
-          <h2></h2>
-          <p></p>
+          <h2>Null Pointers</h2>
+          <p>A null pointer is a pointer that does not point to a valid memory location. Dereferencing a null pointer
+            can lead to program crashes or undefined behavior. To avoid null pointer errors, make sure your pointer is
+            initialized to a valid memory location before dereferencing it.</p>
         </div>
         <div class="col-lg-1 col-sm-1"></div>
-        <div class="col-lg-4 col-sm-6 "><img src="img/" class="img-fluid rounded-1 shadow-lg" alt="Tutorial image">
+        <div class="col-lg-4 col-sm-6 "><img src="img/nullpoint.png" class="img-fluid rounded-1 shadow-lg" alt="Tutorial image">
         </div>
         <div class="col-lg-1 col-sm-1"></div>
       </div>
       <br>
       <div class="row">
         <div class="col-lg-2 col-sm-1"></div>
-        <div class="col-lg-4 col-sm-6"><img src="img/" class="img-fluid rounded-1 shadow-lg " alt="Tutorial image">
+        <div class="col-lg-4 col-sm-6"><img src="img/danglepoint.png" class="img-fluid rounded-1 shadow-lg " alt="Tutorial image">
         </div>
         <div class="col-lg-1 col-sm-1"></div>
         <div class="col-lg-4 col-sm-6 rounded blueBox">
-          <h2></h2>
-          <p></p>
+          <h2>Dangling Pointers</h2>
+          <p>A dangling pointer is a pointer that points to a memory location that has been deallocated or freed.
+            Dereferencing a dangling pointer can lead to program crashes or undefined behavior. To avoid dangling
+            pointer errors, make sure your pointer is updated or set to null when the memory it points to is deallocated
+            or freed.</p>
         </div>
         <div class="col-lg-1 col-sm-1"></div>
       </div>
@@ -203,23 +227,29 @@
       <div class="row">
         <div class="col-lg-1 col-sm-1"></div>
         <div class="col-lg-4 col-sm-6 rounded greyBox">
-          <h2></h2>
-          <p></p>
+          <h2>Uninitialized Pointers</h2>
+          <p>An uninitialized pointer is a pointer that has not been assigned a value. Dereferencing an uninitialized
+            pointer can lead to program crashes or undefined behavior. To avoid uninitialized pointer errors, make sure
+            your pointer is assigned a valid memory location before dereferencing it.</p>
+
         </div>
         <div class="col-lg-1 col-sm-1"></div>
-        <div class="col-lg-4 col-sm-6  "><img src="img/" class="img-fluid rounded-1 shadow-lg" alt="Tutorial image">
+        <div class="col-lg-4 col-sm-6  "><img src="img/unpoint.png" class="img-fluid rounded-1 shadow-lg" alt="Tutorial image">
         </div>
         <div class="col-lg-1 col-sm-1"></div>
       </div>
       <br>
       <div class="row">
         <div class="col-lg-2 col-sm-1"></div>
-        <div class="col-lg-4 col-sm-6  "><img src="img/" class="img-fluid rounded-1 shadow-lg" alt="Tutorial image">
+        <div class="col-lg-4 col-sm-6  "><img src="img/invreff.png" class="img-fluid rounded-1 shadow-lg" alt="Tutorial image">
         </div>
         <div class="col-lg-1 col-sm-1"></div>
         <div class="col-lg-4 col-sm-6 rounded blueBox ">
-          <h2></h2>
-          <p></p>
+          <h2>Invalid References</h2>
+          <p>An invalid reference is a reference that does not refer to a valid object or variable. Using an invalid
+            reference can lead to program crashes or undefined behavior. To avoid invalid reference errors, make sure
+            your reference is initialized to a valid object or variable before using it.</p>
+
         </div>
         <div class="col-lg-1 col-sm-1"></div>
       </div>
@@ -227,23 +257,15 @@
       <div class="row">
         <div class="col-lg-1 col-sm-1"></div>
         <div class="col-lg-4 col-sm-6 rounded greyBox">
-          <h2></h2>
-          <p></p>
+          <h2>References to Temporary Objects</h2>
+          <p>A reference to a temporary object is a reference that refers to an object that is destroyed at the end of
+            the statement or expression it is used in. Using a reference to a temporary object can lead to program
+            crashes or undefined behavior. To avoid references to temporary object errors, make sure your reference
+            refers to an object with a longer lifetime.</p>
+
         </div>
         <div class="col-lg-1 col-sm-1"></div>
-        <div class="col-lg-4 col-sm-6 "><img src="img/" class="img-fluid rounded-1 shadow-lg" alt="Tutorial image">
-        </div>
-        <div class="col-lg-1 col-sm-1"></div>
-      </div>
-      <br>
-      <div class="row">
-        <div class="col-lg-2 col-sm-1"></div>
-        <div class="col-lg-4 col-sm-6 "><img src="img/" class="img-fluid rounded-1 shadow-lg rounded-1 shadow-lg"
-            alt="Tutorial image"></div>
-        <div class="col-lg-1 col-sm-1"></div>
-        <div class="col-lg-4 col-sm-6 rounded blueBox">
-          <h2></h2>
-          <p></p>
+        <div class="col-lg-4 col-sm-6 "><img src="img/tempref.png" class="img-fluid rounded-1 shadow-lg" alt="Tutorial image">
         </div>
         <div class="col-lg-1 col-sm-1"></div>
       </div>
