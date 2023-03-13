@@ -117,7 +117,7 @@
                   $conn = mysqli_connect('localhost', 'dedezvrg_admin', '7Nwiq?;xZ=JJ', 'dedezvrg_dedeBugger');
                 
                   // Execute the SQL query
-                  $query = mysqli_query($conn, "SELECT * FROM Search WHERE Title LIKE '%$searchTerm%' OR Description LIKE '%$searchTerm%'");
+                  $query = mysqli_query($conn, "SELECT * FROM Search WHERE Title LIKE '%$searchTerm%' OR Description LIKE '%$searchTerm%' OR ErrCode LIKE '%$searchTerm%'");
                 
                   // Check if the query was successful
                   if($query !== false) {
